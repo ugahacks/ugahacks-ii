@@ -1,5 +1,8 @@
 $(function() {
 
+    //initialize parse
+    Parse.initialize("F0G92RCCmfXIa2Ab4CWI6s0Hc9YpRxLUVce7VyJc", "BSfMeZ6LsALrOLRkcoBEllTWECd6iil3fUAuebhH");
+
     $("input,textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
@@ -17,6 +20,29 @@ $(function() {
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
+
+	    //upload user information to parse database
+	    var UserInfo = Parse.Object.extend("UserInfo");
+	    var userInfo = new UserInfo();
+
+	    userInfo.set("name", name);
+	    userInfo.set("email", email);
+            userInfo.set("phone", phone);
+	    userInfo.set("message", message);
+
+	    userInfo.save(null, {
+  	      success: function(userInfo) {
+    		// Execute any logic that should take place after the object is saved.
+    		//alert('New object created with objectId: ' + userInfo.id);
+    	      },
+    	      error: function(userInfo, error) {
+    		// Execute any logic that should take place if the save fails.
+    		// error is a Parse.Error with an error code and message.
+    		//alert('Failed to create new object, with error code: ' + error.message);
+    	      }
+    	    });	
+
+
             $.ajax({
                 url: "././mail/contact_me.php",
                 type: "POST",
