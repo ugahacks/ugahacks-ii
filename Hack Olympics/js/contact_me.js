@@ -14,7 +14,11 @@ $(function() {
             var name = $("input#name").val();
             var email = $("input#email").val();
             var phone = $("input#phone").val();
-            var message = $("textarea#message").val();
+            var message = $("textarea#awesome").val();
+            var school = $("textarea#school").val();
+            var github = $("textarea#github").val();
+            var linkedin = $("textarea#linkedin").val();
+            var diet = $("textarea#diet").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
@@ -27,8 +31,12 @@ $(function() {
 
 	    userInfo.set("name", name);
 	    userInfo.set("email", email);
-            userInfo.set("phone", phone);
+        userInfo.set("phone", phone);
 	    userInfo.set("message", message);
+        userInfo.set("school", school);
+        userInfo.set("github", github);
+        userInfo.set("linkedin", linkedin);
+        userInfo.set("diet", diet);
 
 	    userInfo.save(null, {
   	      success: function(userInfo) {
