@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
 
-    <title>UGA's Hackathon</title>
+    <title>UGA Hacks</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -88,8 +88,8 @@
         </div>
         <div class="container-fluid head-container">
             <div class="intro-text">
-                <div class="intro-lead-in">UGA Hackathon</div>
-                <div class="intro-heading">Hack Olympics</div>
+                <div class="intro-lead-in">UGA's Official Hackathon</div>
+                <div class="intro-heading">UGA Hacks</div>
                 <a href="#contact" class="page-scroll btn btn-xl">Register</a>
             </div>
         </div>
@@ -460,11 +460,11 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Github URL *" id="github" required data-validation-required-message="Please enter your github URL.">
+                                    <input type="text" class="form-control" placeholder="Your Github URL *" id="github">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Linkedin URL *" id="linkedin" required data-validation-required-message="Please enter your Linkedin URL.">
+                                    <input type="text" class="form-control" placeholder="Your Linkedin URL *" id="linkedin">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
@@ -475,7 +475,10 @@
                             <div class="clearfix"></div>
                         </div>
                         <div class="col-md-4">
-                            <a href="#" class="btn btn-default btn-circle"><i class="fa fa-file-code-o"></i> Upload Resume</a>
+                            <!--input type="file" name="resume" title="Upload Resume"-->
+                            <span class="btn btn-default btn-file">
+                                <i class="glyphicon glyphicon-file"></i> Upload Resume <input id="resume" type="file" class="file">
+                            </span>
                         </div>
                         <div class="col-md-4 text-center">
                             <div id="success"></div>

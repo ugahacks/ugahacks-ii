@@ -332,7 +332,7 @@ header {
     overflow: hidden;  
 }
 
-header .intro-text {
+header .intro-text {    
     padding-top: 100px;
     padding-bottom: 50px;
 }  
@@ -776,6 +776,26 @@ section#contact:-ms-input-placeholder {
 
 section#contact .text-danger {
     color: #e74c3c;
+}
+
+.btn-file {
+   position: relative;
+   overflow: hidden;
+}
+.btn-file input[type=file] {
+   position: absolute;
+   top: 0;
+   right: 0;
+   min-width: 100%;
+   min-height: 100%;
+   font-size: 100px;
+   text-align: right;
+   filter: alpha(opacity=0);
+   opacity: 0;
+   outline: none;
+   background: white;
+   cursor: inherit;
+   display: block;
 }
 
 footer {
