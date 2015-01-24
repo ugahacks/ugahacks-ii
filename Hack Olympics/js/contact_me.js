@@ -30,6 +30,13 @@ $(function() {
 	    var UserInfo = Parse.Object.extend("UserInfo");
 	    var userInfo = new UserInfo();
 
+        var resume_file = new Parse.File("resume", resume);
+        resume_file.save.then(function(){
+            //file has been saved
+        }, function(error){
+            // files got messed UP
+        });
+
 	    userInfo.set("name", name);
 	    userInfo.set("email", email);
         userInfo.set("phone", phone);
@@ -38,7 +45,7 @@ $(function() {
         userInfo.set("github", github);
         userInfo.set("linkedin", linkedin);
         userInfo.set("diet", diet);
-        userInfo.set("resume", resume);
+        userInfo.set("resume", resume_file);
 
 	    userInfo.save(null, {
   	      success: function(userInfo) {
