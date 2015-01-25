@@ -14,7 +14,12 @@ $(function() {
             var name = $("input#name").val();
             var email = $("input#email").val();
             var phone = $("input#phone").val();
-            var message = $("textarea#message").val();
+            var message = $("input#awesome").val();
+            var school = $("input#school").val();
+            var github = $("input#github").val();
+            var linkedin = $("input#linkedin").val();
+            var diet = $("input#diet").val();
+            var resume = $("input#resume").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
@@ -25,10 +30,22 @@ $(function() {
 	    var UserInfo = Parse.Object.extend("UserInfo");
 	    var userInfo = new UserInfo();
 
+        var resume_file = new Parse.File("resume", resume);
+        resume_file.save.then(function(){
+            //file has been saved
+        }, function(error){
+            // files got messed UP
+        });
+
 	    userInfo.set("name", name);
 	    userInfo.set("email", email);
-            userInfo.set("phone", phone);
+        userInfo.set("phone", phone);
 	    userInfo.set("message", message);
+        userInfo.set("school", school);
+        userInfo.set("github", github);
+        userInfo.set("linkedin", linkedin);
+        userInfo.set("diet", diet);
+        userInfo.set("resume", resume_file);
 
 	    userInfo.save(null, {
   	      success: function(userInfo) {

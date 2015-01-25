@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
 
-    <title>UGA's Hackathon</title>
+    <title>UGA Hacks</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -47,7 +47,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Hack Olympics</a>
+                <a class="navbar-brand page-scroll" href="#page-top">UGA Hacks</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -77,10 +77,19 @@
 
     <!-- Header -->
     <header>
-        <div class="container">
+        <div class="header-background-image">
+
+        </div>
+        <div class="background-video"> <!-- embed-responsive embed-responsive-16by9 -->
+            <video preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+                <source src="mov/athens720.mp4" type="video/mp4">
+                Sorry, your browser does not support HTML5 video.
+            </video>
+        </div>
+        <div class="container-fluid head-container">
             <div class="intro-text">
-                <div class="intro-lead-in">UGA Hackathon</div>
-                <div class="intro-heading">Hack Olympics</div>
+                <div class="intro-lead-in">UGA's Official Hackathon</div>
+                <div class="intro-heading">UGA Hacks</div>
                 <a href="#contact" class="page-scroll btn btn-xl">Register</a>
             </div>
         </div>
@@ -374,17 +383,17 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="img/logos/fourathens.gif" class="img-responsive img-centered" alt="">
+                        <!--img src="img/logos/fourathens.gif" class="img-responsive img-centered" alt=""-->
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="img/logos/hackyard_400x400.png" class="img-responsive img-centered" alt="">
+                        <!--img src="img/logos/hackyard_400x400.png" class="img-responsive img-centered" alt=""-->
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="img/logos/homedepot.jpg" class="img-responsive img-centered" alt="">
+                        <!--img src="img/logos/homedepot.jpg" class="img-responsive img-centered" alt=""-->
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
@@ -396,19 +405,19 @@
             <div class="row">
                 <div class="col-md-6 col-sm-6">
                     <a href="#">
-                        <img src="img/logos/tumblr_logotype_blue_512.png" class="img-responsive img-centered" alt="">
+                        <!--img src="img/logos/tumblr_logotype_blue_512.png" class="img-responsive img-centered" alt=""-->
                     </a>
                 </div>
                 <div class="col-md-6 col-sm-6">
                     <a href="#">
-                        <img src="img/logos/google.png" class="img-responsive img-centered" alt="">
+                        <!--img src="img/logos/google.png" class="img-responsive img-centered" alt=""-->
                     </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="img/logos/state.png" class="img-responsive img-centered" alt="">
+                        <!--img src="img/logos/state.png" class="img-responsive img-centered" alt=""-->
                     </a>
                 </div>
             </div>
@@ -440,18 +449,42 @@
                                     <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
                                     <p class="help-block text-danger"></p>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <input type="text" class="form-control" placeholder="Why Are You Awesome?" id="awesome" required data-validation-required-message="That's not particularly convincing.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                             <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your University/School *" id="school" required data-validation-required-message="Please enter your University/School.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Github URL *" id="github">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Linkedin URL *" id="linkedin">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Dietary Restrictions *" id="diet" required data-validation-required-message="Please, we just want to give you free food.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Submit</button>
-                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <!--input type="file" name="resume" title="Upload Resume"-->
+                            <span class="btn btn-default btn-file">
+                                <i class="glyphicon glyphicon-file"></i> Upload Resume <input id="resume" type="file" class="file">
+                            </span>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div id="success"></div>
+                            <button type="submit" class="btn btn-xl">Submit</button>
+                        </div>
+                        <div class="col-md-4">
                         </div>
                     </form>
                 </div>
