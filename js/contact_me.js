@@ -19,7 +19,7 @@ $(function() {
             var github = $("input#github").val();
             var linkedin = $("input#linkedin").val();
             var diet = $("input#diet").val();
-            //var resume = $("input#resume").val();
+            var resume = $("input#resume").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
@@ -30,12 +30,12 @@ $(function() {
 	    var UserInfo = Parse.Object.extend("UserInfo");
 	    var userInfo = new UserInfo();
 
-        /*var resume_file = new Parse.File("resume", resume);
+        var resume_file = new Parse.File("resume", resume);
         resume_file.save.then(function(){
             //file has been saved
         }, function(error){
             // files got messed UP
-        });*/
+        });
 
 	    userInfo.set("name", name);
 	    userInfo.set("email", email);
@@ -45,7 +45,7 @@ $(function() {
         userInfo.set("github", github);
         userInfo.set("linkedin", linkedin);
         userInfo.set("diet", diet);
-        //userInfo.set("resume", resume_file);
+        userInfo.set("resume", resume_file);
 
 	    userInfo.save(null, {
   	      success: function(userInfo) {
