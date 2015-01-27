@@ -19,7 +19,7 @@ $(function () {
             var github = $("input#github").val();
             var linkedin = $("input#linkedin").val();
             var diet = $("input#diet").val();
-            var resume = $("input#resume").files;
+            //var resume = $("input#resume").files;
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
@@ -30,8 +30,8 @@ $(function () {
             var UserInfo = Parse.Object.extend("UserInfo");
             var userInfo = new UserInfo();
 
-            var parseResume;
-            var fileUploadControl = resume;
+            //var parseResume;
+            /*var fileUploadControl = resume;
             if (fileUploadControl.files.length > 0) {
                 var file = fileUploadControl.files[0];
                 var name = "Resume.pdf";
@@ -42,7 +42,7 @@ $(function () {
                 }, function (error) {
                     console.log('save failed');
                 });
-            }
+            }*/
 
 
 
@@ -54,7 +54,7 @@ $(function () {
             userInfo.set("github", github);
             userInfo.set("linkedin", linkedin);
             userInfo.set("diet", diet);
-            userInfo.set("resume", resume_file);
+            //userInfo.set("resume", resume_file);
 
             userInfo.save(null, {
                 success: function (userInfo) {
