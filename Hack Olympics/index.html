@@ -17,7 +17,6 @@
 
     <!-- Custom CSS -->
     <link href="css/agency.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -67,7 +66,7 @@
                         <a class="page-scroll" href="#team">Team</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#register">Register</a>
+                        <a class="page-scroll" href="#contact">Register</a>
                     </li>
                 </ul>
             </div>
@@ -81,17 +80,17 @@
         <div class="header-background-image">
 
         </div>
-        <div class="background-video cinematic"> <!-- embed-responsive embed-responsive-16by9 -->
+        <div class="background-video"> <!-- embed-responsive embed-responsive-16by9 -->
             <video preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
                 <source src="mov/athens720.mp4" type="video/mp4">
                 Sorry, your browser does not support HTML5 video.
             </video>
         </div>
-        <div class="container-fluid head-container header-overlay">
+        <div class="container-fluid head-container">
             <div class="intro-text">
                 <div class="intro-lead-in">UGA's Official Hackathon</div>
                 <div class="intro-heading">UGA Hacks</div>
-                <a href="#register" class="page-scroll btn btn-xl">Register</a>
+                <a href="#contact" class="page-scroll btn btn-xl">Register</a>
             </div>
         </div>
     </header>
@@ -112,8 +111,8 @@
                     <table class="table table-hover">
                         <thead>
                             <tr>
-                            <th class="text-center">Time</th>
-                            <th class="text-center">Event</th>
+                            <th>Time</th>
+                            <th>Event</th>
                             </tr>
                         </thead>
                     <tbody>
@@ -157,8 +156,8 @@
                     <table class="table table-hover">
                         <thead>
                             <tr>
-                            <th class="text-center">Time</th>
-                            <th class="text-center">Event</th>
+                            <th>Time</th>
+                            <th>Event</th>
                             </tr>
                         </thead>
                     <tbody>
@@ -220,7 +219,7 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4 class="subheading">Become Valuable In The Jobs Market</h4>
+                                    <h4 class="subheading">Become Valuble In The Jobs Market</h4>
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">Technical companies love hackathons because they bubble up the smartest and most creative programmers, developers, designers, and engineers around!</p>
@@ -236,7 +235,7 @@
                                     <h4 class="subheading">Learn From Motivated People</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Have one on one meetings with experienced developers, engineers, and designers.</p>
+                                    <p class="text-muted">Have one to one meetings with experienced developers, engineers, and designers.</p>
                                 </div>
                             </div>
                         </li>
@@ -249,7 +248,7 @@
                                     <h4 class="subheading">Win Prizes</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Of the many companies that are sponsoring the UGA Hacks, almost all of which will be hosting their own themed competitions. Not only do you have a chance to win prizes from these companies, but you also have a chance to network!</p>
+                                    <p class="text-muted">Of the many companies that are sponcoring the Hack Olympics, almost all of will be hosting their own themed competitions. Not only do you have a chance to win prizes from these companies, but you also have a chance to network!</p>
                                 </div>
                             </div>
                         </li>
@@ -272,7 +271,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Meet the team that is helping to organize UGA's first bi-annual Hackathon.</h3>
+                    <h3 class="section-subheading text-muted">Meet the team that is helping to organize UGA's first biannual Hackathon.</h3>
                 </div>
             </div>
             <div class="row">
@@ -425,7 +424,7 @@
         </div>
     </aside>
 
-    <section id="register">
+    <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -451,7 +450,7 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Why Are You Awesome?" id="awesome" >
+                                    <input type="text" class="form-control" placeholder="Why Are You Awesome?" id="awesome" required data-validation-required-message="That's not particularly convincing.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -461,23 +460,24 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Github URL" id="github">
+                                    <input type="text" class="form-control" placeholder="Your Github URL *" id="github">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Linkedin URL" id="linkedin">
+                                    <input type="text" class="form-control" placeholder="Your Linkedin URL *" id="linkedin">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Dietary Restrictions" id="diet">
+                                    <input type="text" class="form-control" placeholder="Dietary Restrictions *" id="diet" required data-validation-required-message="Please, we just want to give you free food.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                         </div>
                         <div class="col-md-4">
+                            <!--input type="file" name="resume" title="Upload Resume"-->
                             <span class="btn btn-default btn-file">
-                                <i class="glyphicon glyphicon-file"></i> Upload Resume <input id="resume" type="file" class="file" onchange="uploadResume()">
+                                <i class="glyphicon glyphicon-file"></i> Upload Resume <input id="resume" type="file" class="file">
                             </span>
                         </div>
                         <div class="col-md-4 text-center">
