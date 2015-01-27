@@ -30,6 +30,13 @@ $(function() {
 	    var UserInfo = Parse.Object.extend("UserInfo");
 	    var userInfo = new UserInfo();
 
+        var fileUploadControl = $("#resume")[0];
+        if (fileUploadControl.files.length > 0) {
+            var file = fileUploadControl.files[0];
+            var name = "resume.pdf";
+            var parsefile = new Parse.File(name, file);
+        }
+
         var resume_file = new Parse.File("resume", resume);
         resume_file.save.then(function(){
             //file has been saved
