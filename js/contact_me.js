@@ -19,7 +19,7 @@ $(function() {
             var github = $("input#github").val();
             var linkedin = $("input#linkedin").val();
             var diet = $("input#diet").val();
-            var resume = $("input#resume").val();
+            var resume = $("input#resume").files;
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
