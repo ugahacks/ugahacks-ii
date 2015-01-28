@@ -33,17 +33,16 @@ $(function() {
         var fileUploadControl = $("#resume")[0];
         if (fileUploadControl.files.length > 0) {
           var file = fileUploadControl.files[0];
-          var name = "resume.pdf";
+          var name = "photo.jpg";
          
-          var parseFile = new Parse.File(name, file);
+          parseFile = new Parse.File(name, file);
         }
 
         parseFile.save().then(function() {
-        // The file has been saved to Parse.
+          // The file has been saved to Parse.
         }, function(error) {
-        // The file either could not be read, or could not be saved to Parse.
+          // The file either could not be read, or could not be saved to Parse.
         });
-
 
 	    userInfo.set("name", name);
 	    userInfo.set("email", email);
@@ -54,7 +53,6 @@ $(function() {
         userInfo.set("linkedin", linkedin);
         userInfo.set("diet", diet);
         userInfo.set("resume", parseFile);
-        //userInfo.set("resume", resume_file);
 
 	    userInfo.save(null, {
   	      success: function(userInfo) {
