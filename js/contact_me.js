@@ -61,6 +61,17 @@ $(function() {
     		//alert('New object created with objectId: ' + userInfo.id);
                 //alert("save to parse successfull");
                 alert("Thank you for signing up, your submission has been recived.");
+                $.ajax(                    // Success message
+                    $('#success').html("<div class='alert alert-success'>");
+                    $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                        .append("</button>");
+                    $('#success > .alert-success')
+                        .append("<strong>Your message has been sent. </strong>");
+                    $('#success > .alert-success')
+                        .append('</div>');
+
+                    //clear all fields
+                    $('#contactForm').trigger("reset");)
     	      },
     	      error: function(userInfo, error) {
     		// Execute any logic that should take place if the save fails.
