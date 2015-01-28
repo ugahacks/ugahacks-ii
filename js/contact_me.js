@@ -20,13 +20,13 @@ $(function() {
             var linkedin = $("input#linkedin").val();
             var diet = $("input#diet").val();
             var firstName = name; // For Success/Failure Message
-            var parseFile;
+            //var parseFile;
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
 
-        var fileUploadControl = $("#resume")[0];
+        /*var fileUploadControl = $("#resume")[0];
         if (fileUploadControl.files.length > 0) {
           var file = fileUploadControl.files[0];
           var title = "resume.pdf";
@@ -37,7 +37,7 @@ $(function() {
           // The file has been saved to Parse.
         }, function(error) {
           // The file either could not be read, or could not be saved to Parse.
-        });
+        });*/
 
         //upload user information to parse database
         var UserInfo = Parse.Object.extend("UserInfo");
@@ -51,19 +51,19 @@ $(function() {
         userInfo.set("github", github);
         userInfo.set("linkedin", linkedin);
         userInfo.set("diet", diet);
-        userInfo.set("resume", parseFile);
+        //userInfo.set("resume", parseFile);
 
 	    userInfo.save(null, {
   	      success: function(userInfo) {
     		// Execute any logic that should take place after the object is saved.
     		//alert('New object created with objectId: ' + userInfo.id);
-                alert("save to parse successfull");
+                //alert("save to parse successfull");
     	      },
     	      error: function(userInfo, error) {
     		// Execute any logic that should take place if the save fails.
     		// error is a Parse.Error with an error code and message.
     		//alert('Failed to create new object, with error code: ' + error.message);
-                alert("Aliens are attacking your system\n");
+                //alert("Aliens are attacking your system\n");
     	      }
     	    });	
 
