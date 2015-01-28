@@ -20,18 +20,16 @@ $(function() {
             var linkedin = $("input#linkedin").val();
             var diet = $("input#diet").val();
             var firstName = name; // For Success/Failure Message
+            var parseFile;
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
 
-        var parseFile;
-
         var fileUploadControl = $("#resume")[0];
         if (fileUploadControl.files.length > 0) {
           var file = fileUploadControl.files[0];
           var title = "resume.pdf";
-         
           parseFile = new Parse.File(title, file);
         }
 
