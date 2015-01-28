@@ -40,8 +40,10 @@ $(function() {
 
         parseFile.save().then(function() {
           // The file has been saved to Parse.
+          alert("file save was successfull");
         }, function(error) {
           // The file either could not be read, or could not be saved to Parse.
+          alert("Aliens are attacking your system\n");
         });
 
 	    userInfo.set("name", name);
