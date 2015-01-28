@@ -17,6 +17,7 @@ $(function() {
 	    var github = $("input#github").val();
 	    var linkedin = $("input#linkedin").val();
 	    var diet = $("input#diet").val();
+        var awesome = $("input#awesome").val();
 	    var firstName = name; // For Success/Failure Message
 	    // Check for white space in name for Success/Fail message
 	    if (firstName.indexOf(' ') >= 0) {
@@ -39,6 +40,7 @@ $(function() {
 	    userInfo.set("github", github);
 	    userInfo.set("linkedin", linkedin);
 	    userInfo.set("diet", diet);
+        userInfo.set("awesome", awesome);
 	    //userInfo.set("resume", resume_file);
 	    userInfo.save(null, {
 		success: function(userInfo) {
