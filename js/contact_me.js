@@ -14,11 +14,12 @@ $(function() {
             var name = $("input#name").val();
             var email = $("input#email").val();
             var phone = $("input#phone").val();
-            var message = $("input#awesome").val();
+            //var message = $("input#tee").val();
             var school = $("input#school").val();
             var github = $("input#github").val();
             var linkedin = $("input#linkedin").val();
             var diet = $("input#diet").val();
+            var awesome = $("input#awesome").val();
             var firstName = name; // For Success/Failure Message
             //var parseFile;
             // Check for white space in name for Success/Fail message
