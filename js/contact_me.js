@@ -14,7 +14,7 @@ $(function() {
             var name = $("input#name").val();
             var email = $("input#email").val();
             var phone = $("input#phone").val();
-            //var message = $("input#tee").val();
+            var tee = $("input#tee").val();
             var school = $("input#school").val();
             var github = $("input#github").val();
             var linkedin = $("input#linkedin").val();
@@ -47,11 +47,12 @@ $(function() {
 	    userInfo.set("name", name);
 	    userInfo.set("email", email);
         userInfo.set("phone", phone);
-	    userInfo.set("message", message);
+        userInfo.set("tee", tee);
         userInfo.set("school", school);
         userInfo.set("github", github);
         userInfo.set("linkedin", linkedin);
         userInfo.set("diet", diet);
+        userInfo.set("awesome", awesome);
         //userInfo.set("resume", parseFile);
 
 	    userInfo.save(null, {
