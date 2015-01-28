@@ -30,9 +30,9 @@ $(function() {
         var fileUploadControl = $("#resume")[0];
         if (fileUploadControl.files.length > 0) {
           var file = fileUploadControl.files[0];
-          var name = "resume.pdf";
+          var title = "resume.pdf";
          
-          parseFile = new Parse.File(name, file);
+          parseFile = new Parse.File(title, file);
         }
 
         parseFile.save().then(function() {
@@ -53,7 +53,7 @@ $(function() {
         userInfo.set("github", github);
         userInfo.set("linkedin", linkedin);
         userInfo.set("diet", diet);
-        //userInfo.set("resume", "etst");
+        userInfo.set("resume", parseFile);
 
 	    userInfo.save(null, {
   	      success: function(userInfo) {
