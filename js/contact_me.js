@@ -61,17 +61,20 @@ $(function() {
     		//alert('New object created with objectId: ' + userInfo.id);
                 //alert("save to parse successfull");
                 alert("Thank you for signing up, your submission has been recived.");
-                $.ajax(                    // Success message
+                $.ajax(
+
                     $('#success').html("<div class='alert alert-success'>");
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
                     $('#success > .alert-success')
-                        .append("<strong>Your message has been sent. </strong>");
+                        .append("<strong>Thank you for signing up, your submission has been recived.</strong>");
                     $('#success > .alert-success')
                         .append('</div>');
-
                     //clear all fields
-                    $('#contactForm').trigger("reset");)
+                    $('#contactForm').trigger("reset");
+
+
+                    )
     	      },
     	      error: function(userInfo, error) {
     		// Execute any logic that should take place if the save fails.
@@ -82,7 +85,7 @@ $(function() {
     	    });	
 
 
-            $.ajax({
+            /*$.ajax({
                 url: "././mail/contact_me.php",
                 type: "POST",
                 data: {
@@ -115,7 +118,7 @@ $(function() {
                     //clear all fields
                     $('#contactForm').trigger("reset");
                 },
-            })
+            })*/
         },
         filter: function() {
             return $(this).is(":visible");
