@@ -1,3 +1,24 @@
+@media screen and (min-width: 768px){
+	.cinematic{
+		background-color: black;
+		min-height: 100%;
+		position: relative;
+	}
+
+	.cinematic video{
+		width: 100vw;
+		height: 100vh;
+		object-fit: cover;
+	}
+
+	.header-overlay{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+}
+
 .cinematic{
 	background-color: black;
 	min-height: 720px !important;
