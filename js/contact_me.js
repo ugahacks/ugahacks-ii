@@ -53,7 +53,7 @@ $(function() {
         userInfo.set("github", github);
         userInfo.set("linkedin", linkedin);
         userInfo.set("diet", diet);
-        userInfo.set("resume", "etst");
+        //userInfo.set("resume", "etst");
 
 	    userInfo.save(null, {
   	      success: function(userInfo) {
