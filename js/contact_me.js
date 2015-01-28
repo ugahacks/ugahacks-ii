@@ -1,3 +1,14 @@
+
+// Code for T-Shirt selection
+$(".dropdown-menu li a").click(function(){
+  var selText = $(this).text();
+  $(this).parents('.btn-group').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
+});
+
+$("#btnSearch").click(function(){
+	alert($('.btn-select').text()+", "+$('.btn-select2').text());
+});
+
 $(function() {
     //initialize parse
     Parse.initialize("F0G92RCCmfXIa2Ab4CWI6s0Hc9YpRxLUVce7VyJc", "BSfMeZ6LsALrOLRkcoBEllTWECd6iil3fUAuebhH");
@@ -12,7 +23,7 @@ $(function() {
 	    var name = $("input#name").val();
 	    var email = $("input#email").val();
 	    var phone = $("input#phone").val();
-	    var message = $("input#tee").val();
+	    var tee = $("input#tee").val();
 	    var school = $("input#school").val();
 	    var github = $("input#github").val();
 	    var linkedin = $("input#linkedin").val();
@@ -35,7 +46,7 @@ $(function() {
 	    userInfo.set("name", name);
 	    userInfo.set("email", email);
 	    userInfo.set("phone", phone);
-	    userInfo.set("tee", message);
+	    userInfo.set("tee", tee);
 	    userInfo.set("school", school);
 	    userInfo.set("github", github);
 	    userInfo.set("linkedin", linkedin);
