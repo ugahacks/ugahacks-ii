@@ -19,6 +19,9 @@
     <link href="css/agency.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
+    <!-- Jansy CSS -->
+    <link href="css/jasny-bootstrap.css" rel="stylesheet">
+
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -464,11 +467,11 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Github URL *" id="github">
+                                    <input type="text" class="form-control" placeholder="Your Github URL" id="github">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Linkedin URL *" id="linkedin">
+                                    <input type="text" class="form-control" placeholder="Your Linkedin URL" id="linkedin">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
@@ -478,6 +481,15 @@
                             </div>
                             <div class="clearfix"></div>
                         </div>
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4 text-center">
+                            <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                                <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+                                <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Upload Resume</span><span class="fileinput-exists">Change</span><input type="file" name="Resume"></span>
+                                <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4"></div>
                         <div class="col-md-12 text-center">
                             <div id="success"></div>
                             <button type="submit" class="btn btn-xl">Submit</button>
@@ -539,6 +551,9 @@
     
     <!-- Parse Javascript -->
     <script src="//www.parsecdn.com/js/parse-1.3.3.min.js"></script>
+
+    <!-- Jansy Javascript -->
+    <script src="js/jasny-bootstrap.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
