@@ -44,6 +44,7 @@ $(function() {
 		success: function(userInfo) {
 		    // Execute any logic that should take place after the object is saved.
 		    //alert('New object created with objectId: ' + userInfo.id);
+            alert("thank you");
 		},
 		error: function(userInfo, error) {
 		    // Execute any logic that should take place if the save fails.
