@@ -14,53 +14,78 @@ $(function() {
             var name = $("input#name").val();
             var email = $("input#email").val();
             var phone = $("input#phone").val();
-            var message = $("input#awesome").val();
+            var tee = $("input#tee").val();
             var school = $("input#school").val();
             var github = $("input#github").val();
             var linkedin = $("input#linkedin").val();
             var diet = $("input#diet").val();
-            var resume = $("input#resume").val();
+            var awesome = $("input#awesome").val();
             var firstName = name; // For Success/Failure Message
+            //var parseFile;
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
 
-	    //upload user information to parse database
-	    var UserInfo = Parse.Object.extend("UserInfo");
-	    var userInfo = new UserInfo();
+        /*var fileUploadControl = $("#resume")[0];
+        if (fileUploadControl.files.length > 0) {
+          var file = fileUploadControl.files[0];
+          var title = "resume.pdf";
+          parseFile = new Parse.File(title, file);
+        }
 
-        var resume_file = new Parse.File("resume", resume);
-        resume_file.save.then(function(){
-            //file has been saved
-        }, function(error){
-            // files got messed UP
-        });
+        parseFile.save().then(function() {
+          // The file has been saved to Parse.
+        }, function(error) {
+          // The file either could not be read, or could not be saved to Parse.
+        });*/
+
+        //upload user information to parse database
+        var UserInfo = Parse.Object.extend("UserInfo");
+        var userInfo = new UserInfo();
 
 	    userInfo.set("name", name);
 	    userInfo.set("email", email);
         userInfo.set("phone", phone);
-	    userInfo.set("message", message);
+        userInfo.set("tee", tee);
         userInfo.set("school", school);
         userInfo.set("github", github);
         userInfo.set("linkedin", linkedin);
         userInfo.set("diet", diet);
-        userInfo.set("resume", resume_file);
+        userInfo.set("awesome", awesome);
+        //userInfo.set("resume", parseFile);
 
 	    userInfo.save(null, {
   	      success: function(userInfo) {
     		// Execute any logic that should take place after the object is saved.
     		//alert('New object created with objectId: ' + userInfo.id);
+                //alert("save to parse successfull");
+                alert("Thank you for signing up, your submission has been recived.");
+                $.ajax(
+
+                    $('#success').html("<div class='alert alert-success'>");
+                    $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                        .append("</button>");
+                    $('#success > .alert-success')
+                        .append("<strong>Thank you for signing up, your submission has been recived.</strong>");
+                    $('#success > .alert-success')
+                        .append('</div>');
+                    //clear all fields
+                    $('#contactForm').trigger("reset");
+
+
+                    )
     	      },
     	      error: function(userInfo, error) {
     		// Execute any logic that should take place if the save fails.
     		// error is a Parse.Error with an error code and message.
     		//alert('Failed to create new object, with error code: ' + error.message);
+                //alert("Aliens are attacking your system\n");
     	      }
     	    });	
 
 
-            $.ajax({
+            /*$.ajax({
                 url: "././mail/contact_me.php",
                 type: "POST",
                 data: {
@@ -93,7 +118,7 @@ $(function() {
                     //clear all fields
                     $('#contactForm').trigger("reset");
                 },
-            })
+            })*/
         },
         filter: function() {
             return $(this).is(":visible");
