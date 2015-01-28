@@ -33,17 +33,15 @@ $(function() {
         var fileUploadControl = $("#resume")[0];
         if (fileUploadControl.files.length > 0) {
           var file = fileUploadControl.files[0];
-          var name = "photo.jpg";
+          var name = "resume.pdf";
          
           parseFile = new Parse.File(name, file);
         }
 
         parseFile.save().then(function() {
           // The file has been saved to Parse.
-          alert("file save was successfull");
         }, function(error) {
           // The file either could not be read, or could not be saved to Parse.
-          alert("Aliens are attacking your system\n");
         });
 
 	    userInfo.set("name", name);
@@ -60,11 +58,13 @@ $(function() {
   	      success: function(userInfo) {
     		// Execute any logic that should take place after the object is saved.
     		//alert('New object created with objectId: ' + userInfo.id);
+                alert("save to parse successfull");
     	      },
     	      error: function(userInfo, error) {
     		// Execute any logic that should take place if the save fails.
     		// error is a Parse.Error with an error code and message.
     		//alert('Failed to create new object, with error code: ' + error.message);
+                alert("Aliens are attacking your system\n");
     	      }
     	    });	
 
