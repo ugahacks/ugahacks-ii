@@ -25,9 +25,6 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
 
-	    //upload user information to parse database
-	    var UserInfo = Parse.Object.extend("UserInfo");
-	    var userInfo = new UserInfo();
         var parseFile;
 
         var fileUploadControl = $("#resume")[0];
@@ -43,6 +40,10 @@ $(function() {
         }, function(error) {
           // The file either could not be read, or could not be saved to Parse.
         });
+
+        //upload user information to parse database
+        var UserInfo = Parse.Object.extend("UserInfo");
+        var userInfo = new UserInfo();
 
 	    userInfo.set("name", name);
 	    userInfo.set("email", email);
