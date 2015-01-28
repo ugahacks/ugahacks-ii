@@ -60,6 +60,7 @@ $(function() {
     		// Execute any logic that should take place after the object is saved.
     		//alert('New object created with objectId: ' + userInfo.id);
                 //alert("save to parse successfull");
+                alert("Thank you for signing up, your submission has been recived.");
     	      },
     	      error: function(userInfo, error) {
     		// Execute any logic that should take place if the save fails.
