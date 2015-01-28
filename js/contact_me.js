@@ -77,7 +77,7 @@ $(function() {
                     name: name,
                     phone: phone,
                     email: email,
-                    message: message
+                    //message: message
                 },
                 cache: false,
                 success: function() {
