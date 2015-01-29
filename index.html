@@ -360,10 +360,8 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <!--<input type="text" class="form-control" placeholder="Your Tee Shirt Size? *" id="tee" required data-validation-required-message="free swag is required">
-                                    <p class="help-block text-danger"></p>-->
 									<div class="btn-group form-control">
-                                      <a class="btn dropdown-toggle btn-select" data-toggle="dropdown" id="tee"> T-Shirt Size <span class="caret"></span></a>
+                                      <a class="btn dropdown-toggle btn-select" data-toggle="dropdown" id="tee" required data-validation-required-message="Please enter your T-shirt size.">> T-Shirt Size * <span class="caret"></span></a>
                                       <ul class="dropdown-menu">
                                         <li><a>X Small</a></li>
                                         <li><a>Small</a></li>
@@ -373,12 +371,36 @@
                                         <li><a>XX Large</a></li>
                                       </ul>
                                     </div>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <div class="btn-group form-control">
+                                      <a class="btn dropdown-toggle btn-select" data-toggle="dropdown" id="team"> Do you have a team? *<span class="caret"></span></a>
+                                      <ul class="dropdown-menu">
+                                        <li><a>Yes, and my teammates are applying too.</a></li>
+                                        <li><a>No, but I plan on finding a team before the event</a></li>
+                                        <li><a>No, I will need to find a team at the event</a></li>
+                                      </ul>
+                                    </div>
                                 </div>
                             </div>
                              <div class="col-md-6">
                                 <div class="form-group">
                                     <input type="text" class="form-control" placeholder="Your University/School *" id="school" required data-validation-required-message="Please enter your University/School.">
                                     <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <div class="btn-group form-control">
+                                      <a class="btn dropdown-toggle btn-select" data-toggle="dropdown" id="graduate"> When do you graduate? * <span class="caret"></span></a>
+                                      <ul class="dropdown-menu">
+                                        <li><a>2015</a></li>
+                                        <li><a>2016</a></li>
+                                        <li><a>2017</a></li>
+                                        <li><a>2018</a></li>
+                                        <li><a>Graduate Student</a></li>
+                                        <li><a>High School Student</a></li>
+                                      </ul>
+                                    </div>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control" placeholder="Your Github URL" id="github">
@@ -395,7 +417,7 @@
                             </div>
                             <div class="col-md-8 col-md-offset-2">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Why are you awesome? *" id="awesome" required data-validation-required-message="That's not particularly convincing...">
+                                    <input type="text" class="form-control" placeholder="Anything else we need to know?" id="extrainfo">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>

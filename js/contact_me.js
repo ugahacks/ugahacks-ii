@@ -3,6 +3,7 @@
 $(".dropdown-menu li a").click(function(){
   var selText = $(this).text();
   $(this).parents('.btn-group').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
+  $("btn-group").css({"color":"black"});
 });
 
 $("#btnSearch").click(function(){
@@ -23,12 +24,14 @@ $(function() {
 	    var name = $("input#name").val();
 	    var email = $("input#email").val();
 	    var phone = $("input#phone").val();
-	    var tee = $("#tee").val();
+	    var tee = $("#tee").text();
 	    var school = $("input#school").val();
+	    var graduate = $("#graduate").text();
+	    var team = $("#team").text();
 	    var github = $("input#github").val();
 	    var linkedin = $("input#linkedin").val();
 	    var diet = $("input#diet").val();
-        var awesome = $("input#awesome").val();
+        var extrainfo = $("input#extrainfo").val();
 	    var firstName = name; // For Success/Failure Message
 	    // Check for white space in name for Success/Fail message
 	    if (firstName.indexOf(' ') >= 0) {
@@ -43,15 +46,17 @@ $(function() {
 	    }, function(error){
 		// files got messed UP
 	    });*/
-	    userInfo.set("name", name);
-	    userInfo.set("email", email);
-	    userInfo.set("phone", phone);
-	    userInfo.set("tee", tee);
-	    userInfo.set("school", school);
-	    userInfo.set("github", github);
-	    userInfo.set("linkedin", linkedin);
-	    userInfo.set("diet", diet);
-        userInfo.set("awesome", awesome);
+	    userInfo.set("Name", name);
+	    userInfo.set("Email", email);
+	    userInfo.set("Phone", phone);
+	    userInfo.set("T-Shirt Size", tee);
+	    userInfo.set("Team", team);
+	    userInfo.set("School", school);
+	    userInfo.set("Graduation Year");
+	    userInfo.set("GitHub URL", github);
+	    userInfo.set("Linkedin URL", linkedin);
+	    userInfo.set("Diet Restrictions", diet);
+        userInfo.set("Extra Information", extrainfo);
 	    //userInfo.set("resume", resume_file);
 	    userInfo.save(null, {
 		success: function(userInfo) {
