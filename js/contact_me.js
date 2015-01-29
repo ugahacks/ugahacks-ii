@@ -11,7 +11,7 @@ $("#btnSearch").click(function(){
 });
 
 $(function() {
-	
+
     //initialize parse
     Parse.initialize("F0G92RCCmfXIa2Ab4CWI6s0Hc9YpRxLUVce7VyJc", "BSfMeZ6LsALrOLRkcoBEllTWECd6iil3fUAuebhH");
     $("input,textarea").jqBootstrapValidation({
@@ -53,7 +53,7 @@ $(function() {
 	    userInfo.set("T-Shirt Size", tee);
 	    userInfo.set("Team", team);
 	    userInfo.set("School", school);
-	    userInfo.set("Graduation Year");
+	    userInfo.set("Graduation Year", graduate);
 	    userInfo.set("GitHub URL", github);
 	    userInfo.set("Linkedin URL", linkedin);
 	    userInfo.set("Diet Restrictions", diet);
