@@ -321,7 +321,8 @@ header {
 
 
 .header-background-image{
-    background-image: url(../img/hack.gif);  
+    /*background-image: url(../img/hack.gif);  */
+    background-color: black;
     background-size: cover;
     position: absolute;
     top: 0%;
