@@ -46,17 +46,17 @@ $(function() {
 	    }, function(error){
 		// files got messed UP
 	    });*/
-	    userInfo.set("Name", name);
-	    userInfo.set("Email", email);
-	    userInfo.set("Phone", phone);
-	    userInfo.set("T-Shirt_Size", tee);
-	    userInfo.set("Team", team);
-	    userInfo.set("School", school);
-	    userInfo.set("Graduation_Year", graduate);
-	    userInfo.set("GitHub_URL", github);
-	    userInfo.set("Linkedin_URL", linkedin);
-	    userInfo.set("Diet_Restrictions", diet);
-        userInfo.set("Extra_Information", extrainfo);
+	    userInfo.set("name", name);
+	    userInfo.set("email", email);
+	    userInfo.set("phone", phone);
+	    userInfo.set("shirtsize", tee);
+	    userInfo.set("team", team);
+	    userInfo.set("school", school);
+	    userInfo.set("graduationyear", graduate);
+	    userInfo.set("github", github);
+	    userInfo.set("linkedin", linkedin);
+	    userInfo.set("dietrestrictions", diet);
+        userInfo.set("extrainformation", extrainfo);
 	    //userInfo.set("resume", resume_file);
 	    userInfo.save(null, {
 		success: function(userInfo) {
