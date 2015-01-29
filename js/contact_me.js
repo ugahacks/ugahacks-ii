@@ -69,7 +69,7 @@ $(function() {
 	    userInfo.set("linkedin", linkedin);
 	    userInfo.set("dietrestrictions", diet);
         userInfo.set("extrainformation", extrainfo);
-       	//userInfo.set("resume", parseFile);
+       	userInfo.set("resume", parseFile);
 
 	    userInfo.save(null, {
 		success: function(userInfo) {
