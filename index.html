@@ -20,7 +20,7 @@
     <link href="css/styles.css" rel="stylesheet">
 
     <!-- Jansy CSS -->
-    <link href="css/jasny-bootstrap.css" rel="stylesheet">
+    <link href="css/jasny-bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -360,7 +360,30 @@
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-									<div class="btn-group form-control dropdown-clean">
+                                    <input type="text" class="form-control" placeholder="Your University/School *" id="school" required>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <div class="btn-group form-control dropdown-clean">
+                                      <a class="btn dropdown-toggle btn-select" data-toggle="dropdown" id="graduate"> When do you graduate? * <span class="caret"></span></a>
+                                      <ul class="dropdown-menu">
+                                        <li><a>2015</a></li>
+                                        <li><a>2016</a></li>
+                                        <li><a>2017</a></li>
+                                        <li><a>2018</a></li>
+                                        <li><a>Graduate Student</a></li>
+                                        <li><a>High School Student</a></li>
+                                      </ul>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Anything else we need to know?" id="extrainfo">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <div class="btn-group form-control dropdown-clean">
                                       <a class="btn dropdown-toggle btn-select" data-toggle="dropdown" id="tee"> T-Shirt Size * <span class="caret"></span></a>
                                       <ul class="dropdown-menu">
                                         <li><a>X Small</a></li>
@@ -383,25 +406,6 @@
                                       </ul>
                                     </div>
                                 </div>
-                             </div>
-                             <div class="col-md-4">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your University/School *" id="school" required>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <div class="btn-group form-control dropdown-clean">
-                                      <a class="btn dropdown-toggle btn-select" data-toggle="dropdown" id="graduate"> When do you graduate? * <span class="caret"></span></a>
-                                      <ul class="dropdown-menu">
-                                        <li><a>2015</a></li>
-                                        <li><a>2016</a></li>
-                                        <li><a>2017</a></li>
-                                        <li><a>2018</a></li>
-                                        <li><a>Graduate Student</a></li>
-                                        <li><a>High School Student</a></li>
-                                      </ul>
-                                    </div>
-                                </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control" placeholder="Your Github URL" id="github">
                                     <p class="help-block text-danger"></p>
@@ -414,11 +418,12 @@
                                     <input type="text" class="form-control" placeholder="Dietary Restrictions *" id="diet" required>
                                     <p class="help-block text-danger"></p>
                                 </div>
-                            </div>
-                            <div class="col-md-8 col-md-offset-2">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Anything else we need to know?" id="extrainfo">
-                                    <p class="help-block text-danger"></p>
+                                    <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                                        <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+                                        <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Select file</span><span class="fileinput-exists">Change</span><input type="file" name="resume"></span>
+                                        <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="clearfix"></div>

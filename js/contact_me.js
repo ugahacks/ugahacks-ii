@@ -32,6 +32,8 @@ $(function() {
 	    var linkedin = $("input#linkedin").val();
 	    var diet = $("input#diet").val();
         var extrainfo = $("input#extrainfo").val();
+        var resume = $("#resume").files;
+
 	    var firstName = name; // For Success/Failure Message
 	    // Check for white space in name for Success/Fail message
 	    if (firstName.indexOf(' ') >= 0) {
@@ -40,12 +42,20 @@ $(function() {
 	    //upload user information to parse database
 	    var UserInfo = Parse.Object.extend("UserInfo");
 	    var userInfo = new UserInfo();
-	    /*var resume_file = new Parse.File("resume", resume);
-	    resume_file.save.then(function(){
-		//file has been saved
-	    }, function(error){
-		// files got messed UP
-	    });*/
+	    
+		var fileUploadControl = $("#resume")[0];
+		if (fileUploadControl.files.length > 0) {
+		 	var file = fileUploadControl.files[0];
+		  	var name = "resume.pdf";
+		 
+		  	var parseFile = new Parse.File(name, file);
+		}
+		parseFile.save().then(function() {
+		  	// The file has been saved to Parse.
+		}, function(error) {
+		  	// The file either could not be read, or could not be saved to Parse.
+		});
+	    
 	    userInfo.set("name", name);
 	    userInfo.set("email", email);
 	    userInfo.set("phone", phone);
@@ -57,6 +67,7 @@ $(function() {
 	    userInfo.set("linkedin", linkedin);
 	    userInfo.set("dietrestrictions", diet);
         userInfo.set("extrainformation", extrainfo);
+       	userInfo.set("resume", parseFile);
 	    //userInfo.set("resume", resume_file);
 	    userInfo.save(null, {
 		success: function(userInfo) {
