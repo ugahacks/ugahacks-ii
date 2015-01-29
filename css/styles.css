@@ -57,3 +57,7 @@ a{
 .btn-select + .dropdown-menu{
 	min-width: 100%;
 }
+
+.has-error {
+	display: none;
+}

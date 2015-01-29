@@ -11,6 +11,7 @@ $("#btnSearch").click(function(){
 });
 
 $(function() {
+	
     //initialize parse
     Parse.initialize("F0G92RCCmfXIa2Ab4CWI6s0Hc9YpRxLUVce7VyJc", "BSfMeZ6LsALrOLRkcoBEllTWECd6iil3fUAuebhH");
     $("input,textarea").jqBootstrapValidation({
