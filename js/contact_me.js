@@ -51,39 +51,39 @@ $(function() {
 		 
 		  	parseFile = new Parse.File(name, file);
 		  	parseFile.save().then(function() {
-		  		
+		  		userInfo.set("name", name);
+			    userInfo.set("email", email);
+			    userInfo.set("phone", phone);
+			    userInfo.set("shirtsize", tee);
+			    userInfo.set("team", team);
+			    userInfo.set("school", school);
+			    userInfo.set("graduationyear", graduate);
+			    userInfo.set("github", github);
+			    userInfo.set("linkedin", linkedin);
+			    userInfo.set("dietrestrictions", diet);
+		        userInfo.set("extrainformation", extrainfo);
+		        userInfo.set("resume", parseFile);
+       	
+
+			    userInfo.save(null, {
+				success: function(userInfo) {
+				    // Execute any logic that should take place after the object is saved.
+				    //alert('New object created with objectId: ' + userInfo.id);
+				},
+				error: function(userInfo, error) {
+				    // Execute any logic that should take place if the save fails.
+				    // error is a Parse.Error with an error code and message.
+				    //alert('Failed to create new object, with error code: ' + error.message);
+				}
+			    });
 			}, function(error) {
 		  		// The file either could not be read, or could not be saved to Parse.
 			});
 
-			userInfo.set("resume", parseFile);
+
 		}
 		
 	    
-	    userInfo.set("name", name);
-	    userInfo.set("email", email);
-	    userInfo.set("phone", phone);
-	    userInfo.set("shirtsize", tee);
-	    userInfo.set("team", team);
-	    userInfo.set("school", school);
-	    userInfo.set("graduationyear", graduate);
-	    userInfo.set("github", github);
-	    userInfo.set("linkedin", linkedin);
-	    userInfo.set("dietrestrictions", diet);
-        userInfo.set("extrainformation", extrainfo);
-       	
-
-	    userInfo.save(null, {
-		success: function(userInfo) {
-		    // Execute any logic that should take place after the object is saved.
-		    //alert('New object created with objectId: ' + userInfo.id);
-		},
-		error: function(userInfo, error) {
-		    // Execute any logic that should take place if the save fails.
-		    // error is a Parse.Error with an error code and message.
-		    //alert('Failed to create new object, with error code: ' + error.message);
-		}
-	    });
 	    $.ajax({
 		url: "././mail/contact_me.php",
 		type: "POST",
