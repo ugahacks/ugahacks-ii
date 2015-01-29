@@ -28,6 +28,10 @@
 	max-height: 720px !important;
 }
 
-#Schedule{
-	padding-top: 20px !important;
+
+@media (min-width: 768px){
+	#schedule, #about, #sponsors, #register{
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
 }
