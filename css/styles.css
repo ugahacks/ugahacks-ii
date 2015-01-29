@@ -48,6 +48,10 @@
 	text-align: left;
 }
 
+.btn-select > ul > a {
+	color: black;
+}
+
 a{
 	cursor: pointer;
 }
@@ -58,8 +62,4 @@ a{
 
 .btn-select + .dropdown-menu{
 	min-width: 100%;
-}
-
-.text_danger {
-	color: red;
 }

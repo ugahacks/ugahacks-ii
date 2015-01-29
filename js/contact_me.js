@@ -24,10 +24,10 @@ $(function() {
 	    var name = $("input#name").val();
 	    var email = $("input#email").val();
 	    var phone = $("input#phone").val();
-	    var tee = $("#tee").text();
+	    var tee = $("#tee option:selected").text();
 	    var school = $("input#school").val();
-	    var graduate = $("#graduate").text();
-	    var team = $("#team").text();
+	    var graduate = $("#graduate option:selected").text();
+	    var team = $("#team option:selected").text();
 	    var github = $("input#github").val();
 	    var linkedin = $("input#linkedin").val();
 	    var diet = $("input#diet").val();
