@@ -43,18 +43,20 @@ $(function() {
 	    var UserInfo = Parse.Object.extend("UserInfo");
 	    var userInfo = new UserInfo();
 	    
+	    var parseFile;
 		var fileUploadControl = $("#resume")[0];
 		if (fileUploadControl.files.length > 0) {
 		 	var file = fileUploadControl.files[0];
 		  	var name = "resume.pdf";
 		 
-		  	var parseFile = new Parse.File(name, file);
+		  	parseFile = new Parse.File(name, file);
+		  	parseFile.save().then(function() {
+		  		// The file has been saved to Parse.
+			}, function(error) {
+		  		// The file either could not be read, or could not be saved to Parse.
+			});
 		}
-		parseFile.save().then(function() {
-		  	// The file has been saved to Parse.
-		}, function(error) {
-		  	// The file either could not be read, or could not be saved to Parse.
-		});
+		
 	    
 	    userInfo.set("name", name);
 	    userInfo.set("email", email);
@@ -68,7 +70,7 @@ $(function() {
 	    userInfo.set("dietrestrictions", diet);
         userInfo.set("extrainformation", extrainfo);
        	userInfo.set("resume", parseFile);
-	    //userInfo.set("resume", resume_file);
+
 	    userInfo.save(null, {
 		success: function(userInfo) {
 		    // Execute any logic that should take place after the object is saved.
