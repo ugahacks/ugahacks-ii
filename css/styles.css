@@ -58,6 +58,6 @@ a{
 	min-width: 100%;
 }
 
-.has-error {
-	display: none;
+.text_danger {
+	color: red;
 }
