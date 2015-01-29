@@ -54,7 +54,6 @@ $(function() {
 		  		userInfo.set("resume", parseFile);
 			}, function(error) {
 		  		// The file either could not be read, or could not be saved to Parse.
-		  		alert("Error");
 			});
 		}
 		
