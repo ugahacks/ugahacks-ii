@@ -23,7 +23,7 @@ $(function() {
 	    var name = $("input#name").val();
 	    var email = $("input#email").val();
 	    var phone = $("input#phone").val();
-	    var tee = $("input#tee").val();
+	    var tee = $("#tee").val();
 	    var school = $("input#school").val();
 	    var github = $("input#github").val();
 	    var linkedin = $("input#linkedin").val();
