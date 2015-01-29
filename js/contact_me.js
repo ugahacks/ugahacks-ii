@@ -51,7 +51,7 @@ $(function() {
 		 
 		  	parseFile = new Parse.File(name, file);
 		  	parseFile.save().then(function() {
-		  		// The file has been saved to Parse.
+		  		userInfo.set("resume", parseFile);
 			}, function(error) {
 		  		// The file either could not be read, or could not be saved to Parse.
 			});
@@ -69,7 +69,7 @@ $(function() {
 	    userInfo.set("linkedin", linkedin);
 	    userInfo.set("dietrestrictions", diet);
         userInfo.set("extrainformation", extrainfo);
-       	userInfo.set("resume", parseFile);
+       	
 
 	    userInfo.save(null, {
 		success: function(userInfo) {
