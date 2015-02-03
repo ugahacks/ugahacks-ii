@@ -321,7 +321,7 @@ header {
 
 
 .header-background-image{
-    /*background-image: url(../img/hack.gif);  */
+    background-image: url(../img/cat.gif);  
     background-color: black;
     background-size: cover;
     position: absolute;
@@ -714,18 +714,18 @@ aside.clients img {
     margin: 50px auto;
 }
 
-section#contact {
-    background-color: #222;
-    background-image: url(../img/map-image.png);
+section#register {
+    /*background-color: #222;*/
+    background-image: url(../img/bw.jpg);
     background-position: center;
     background-repeat: no-repeat;
 }
 
-section#contact .section-heading {
+section#register .section-heading {
     color: #fff;
 }
 
-section#contact .form-group {
+section#register .form-group {
     margin-bottom: 25px;
 }
 
@@ -747,21 +747,21 @@ section#contact .form-control:focus {
     box-shadow: none;
 }
 
-section#contact::-webkit-input-placeholder {
+section#register::-webkit-input-placeholder {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact:-moz-placeholder {
+section#register:-moz-placeholder {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact::-moz-placeholder {
+section#register::-moz-placeholder {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
