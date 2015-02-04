@@ -56,6 +56,18 @@ h6 {
     font-weight: 700;
 }
 
+.big-g{
+    font-family: Lato, Helvetica, sans-serif;
+    font-size: 125px;
+    color: red;
+}
+
+.big-g-nav{
+    font-family: Lato, Helvetica, sans-serif;
+    font-size: 45px;
+    color: red;
+}
+
 .life-strip {
     width: 100%;
     height: 20px;
