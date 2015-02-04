@@ -77,6 +77,16 @@ h6 {
     min-height: 100%;
 }
 
+.server-panic {
+    background-image: url(../img/hal.gif);
+    background-color: #4D4D4D;
+    background-size: cover;
+    position: absolute;
+    z-index: -9001;
+    min-width: 100%;
+    min-height: 100%;
+}
+
 .bubble{
     padding-top: 50px;
 }
