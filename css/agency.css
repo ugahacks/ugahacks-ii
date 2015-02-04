@@ -203,6 +203,11 @@ fieldset[disabled] .btn-xl.active {
     background-color: #222;
 }
 
+.navbar-default .logo {
+    max-height: 40px;
+}
+
+
 .navbar-default .navbar-brand {
     font-family: "Arial","Helvetica Neue",Helvetica,Arial,cursive;
     color: #e6010e;
