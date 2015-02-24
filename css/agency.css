@@ -56,6 +56,10 @@ h6 {
     font-weight: 700;
 }
 
+.robot-big{
+    position: absolute;
+}
+
 .big-g{
     font-family: Lato, Helvetica, sans-serif;
     font-size: 125px;
