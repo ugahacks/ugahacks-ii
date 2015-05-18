@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'main/home'
+
+  get 'main/contact'
+
+  get 'main/signup'
+
+  get 'main/stub1'
+
+  get 'main/stub2'
+
+  get 'main/stub3'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
