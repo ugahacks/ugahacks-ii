@@ -29,15 +29,15 @@ h3 {
 }
 
 h2 {
-	font-family: gotham medium;
+	font-family: gotham medium, sans-serif;
 	font-size: 40pt;
 	margin-top: 5px;
 	padding: 0;
 }
 
 h3 {
-	font-family: gotham medium;
-	font-size: 19.5pt;
+	font-family: gotham medium, sans-serif;
+	font-size: 26.5pt;
 	margin-top: -50px;
 }
 
@@ -72,7 +72,7 @@ input-placeholder {
 	border-radius: 5px;
 	width: 200px;
 	height: 50px;
-	font-family: gotham book;	
+	font-family: gotham book, sans-serif;	
 	margin-top: 25px;
 	margin-bottom: 50px;
 	font-size: 15pt;
@@ -80,12 +80,12 @@ input-placeholder {
 
 ::-webkit-input-placeholder {
    text-align: center;
-   font-family: gotham book;
+   font-family: gotham book, sans-serif;
    font-size: 15pt;
 }
 ::-webkit-input [type="text"] {
 	text-align: center;
-	font-family: gotham book;
+	font-family: gotham book, sans-serif;
 	font-size: 30pt;
 }
 
@@ -99,4 +99,14 @@ input-placeholder {
 
 :-ms-input-placeholder {  
    text-align: center; 
+}
+
+@media (max-width: 480px) {
+	html {
+		background-size: auto;
+	}
+	#logo {
+		height: 50%;
+		width: 50%;
+	}
 }
