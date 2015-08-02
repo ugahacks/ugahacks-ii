@@ -14,14 +14,20 @@
 	</head>
 	<body>
 		<div class="container">
-			<img id="logo" src="logo.png">
+			<%= image_tag("logo.png", alt: " uga hackslogo", id:"logo") %>
 			
 			<h2>OCTOBER 23RD-25TH</h2>
 			<h3>LAMAR DODD SCHOOL OF ART</h3>
 			
 			<div class="emailSubmission">
-				<input id="emailInput" type="email" id="email" name="email" placeholder="example@email.com" /><br>
-				<button id="emailSubmit" type="submit">I WANT IN</button>
+			<%= form_for Subscription.new,  :html => {:id => "emailSubmission"}  do |f| %>
+          <div class="field">
+            <%= f.text_field :email, id:'emailInput'%>
+          </div>
+          <div class="actions">
+            <%= f.submit "I want in", id: 'emailSubmit' %>
+          </div>
+          <% end %>
 			</div>
 		</div>
 	</body>

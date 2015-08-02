@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  resources :subscriptions
+
   get 'single_views/home'
 
-  root 'main#home'
+  root 'single_views#home'
   
   get 'main/home'
 
