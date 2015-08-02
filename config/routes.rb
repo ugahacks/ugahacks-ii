@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'single_views/home'
+
   root 'main#home'
   
   get 'main/home'
