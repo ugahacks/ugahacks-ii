@@ -8,9 +8,6 @@
 		
 		<title>UGAHacks - Learn. Create. Share – Coming Soon!</title>
 		
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		
-		<script type="text/javascript" src="js/submit.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -20,14 +17,14 @@
 			<h3>LAMAR DODD SCHOOL OF ART</h3>
 			
 			<div class="emailSubmission">
-			<%= form_for Subscription.new,  :html => {:id => "emailSubmission"}  do |f| %>
-          <div class="field">
-            <%= f.text_field :email, id:'emailInput'%>
-          </div>
-          <div class="actions">
-            <%= f.submit "I want in", id: 'emailSubmit' %>
-          </div>
-          <% end %>
+
+
+          	<%= form_tag('emailapi/subscribe', method: "post", id: "subscribe") do -%>
+    			<input id="emailInput" type="email" name="email" placeholder="email address"/>
+    			   				<br>
+
+   				<%= submit_tag("Keep Me Updated", :id=>"emailSubmit") %>
+			<% end %>
 			</div>
 		</div>
 	</body>

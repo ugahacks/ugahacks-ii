@@ -1,21 +1,11 @@
 Rails.application.routes.draw do
-  resources :subscriptions
-
   get 'single_views/home'
 
   root 'single_views#home'
-  
-  get 'main/home'
+ 
+  post 'single_views/subscribe' => 'single_views#subscribe'
 
-  get 'main/contact'
-
-  get 'main/signup'
-
-  get 'main/stub1'
-
-  get 'main/stub2'
-
-  get 'main/stub3'
+  post 'emailapi/subscribe' => 'emailapi#subscribe'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
