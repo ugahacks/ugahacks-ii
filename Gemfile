@@ -1,4 +1,5 @@
 source 'https://rubygems.org' do
+ruby '2.0.0'
 
   gem 'rails', '4.1.8'
   gem "pg", "~> 0.18"
