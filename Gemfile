@@ -1,5 +1,5 @@
 source 'https://rubygems.org' do
-ruby '2.0.0'
+ruby '2.2.0'
 
   gem 'rails', '4.1.8'
   gem "pg", "~> 0.18"
@@ -10,6 +10,7 @@ ruby '2.0.0'
   gem 'turbolinks'
   gem 'jbuilder', '~> 2.0'
   gem 'gibbon'
+
 
   group :development, :test do
     gem "spring", "~> 1.3"
@@ -27,6 +28,7 @@ ruby '2.0.0'
     gem "pg", "~> 0.18"
     gem "unicorn", "~> 4.9"
     gem "unicorn-rails", "~> 2.2"
+    gem 'rails_12factor', 
   end
 
 end
