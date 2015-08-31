@@ -11,6 +11,7 @@ ruby '2.2.0'
   gem 'jbuilder', '~> 2.0'
   gem 'gibbon'
   gem "twitter-bootstrap-rails"
+  gem "bower-rails", "~> 0.10.0"
 
 
   group :development, :test do

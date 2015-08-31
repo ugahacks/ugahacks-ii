@@ -1,81 +1,59 @@
-<!DOCTYPE html>
-<html lang="en-us">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta http-equiv="X-UA-Compatible" content="IE-Edge">
-		<meta name="google-site-verification" content="clBCUAIsrx6jCRIpU0gOMrsygGiyZHts4no5ls89zJA" />
-		
-		<title>UGAHacks - Learn. Create. Share – Coming Soon!</title>
-		
-	</head>
-	<nav class="navbar navbar-default">
-	  <div class="container-fluid">
-	    <!-- Brand and toggle get grouped for better mobile display -->
-	    <div class="navbar-header">
-	    </div>
-
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	   
-	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#">About</a></li>
-	        <li><a href="#">FAQ</a></li>
-	        <li><a href="#">Sponsors</a></li>
-	        <li><a href="#">Contact</a></li>
-	       
-	      </ul>
-	    </div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
-</nav>
-	<body>
-		<div class="container">
-			<div class="row">
-				<%= image_tag("logo.png", alt: " uga hackslogo", id:"logo") %>
-				
-			</div>
-			
-			<div class="row">
-			</div>
-
-			<div class="row">
-				<h2>OCTOBER 23RD-25TH</h2>
-				<br>
-				<br>
-				<h3>LAMAR DODD SCHOOL OF ART</h3>
-			</div>
-
-			<div class="row">
-				<div class="emailSubmission">
-	   <!--        	<%= form_tag('emailapi/subscribe', method: "post", id: "subscribe") do -%>
-	    			<input id="emailInput" type="email" name="email" placeholder="email address"/>
-	    			   				<br>
-	   				<%= submit_tag("Keep Me Updated", :id=>"emailSubmit") %>
-				<% end %> -->
-
-				<%= link_to 'Apply', @typeform_url, class: "btn sign-home-btn", :id=>"emailSubmit" %>
-				</div>
-			</div>
-
-
-			<div class="row">
-				<h1> We are calling all the dreamers, movers and creators to do something epic. </h1>
-			</div>
-
-			<div class="row">
-				<h1> You got questions we have answers </h1>
-			</div>
-
-			<div class="row">
-				<h1>The sponsors making our event possible </h1>
-			</div>
-
-			<div class="row">
-				<h1> Ready to Rock? </h1>
-			</div>
-
+<div id="main-content" class="container">
+	<div class="row text-center">
+		<%= image_tag("logo.png",
+		class: "img-responsive",
+		alt: "ugahacks logo",
+		id: "logo"
+		) %>
+	</div>
+	<div class="jumbotron spotlight">
+		<h1>36 hours. 1 hackathon.</h1>
+		<h1>Learn, create, share.</h1>
+		<h2>Join us for an event full of motivated hackers, just like you.</h2>
+		<a href="#register"><div class="btn btn-danger btn-lg">Register</div></a>
+	</div>
+	<!-- <div class="row"> -->
+	<!-- <div class="emailSubmission"> -->
+	<%# form_tag('emailapi/subscribe', method: "post", id: "subscribe") do -%>
+	<!-- <input id="emailInput" type="email" name="email" placeholder="email address"/> -->
+	<%# submit_tag("Keep Me Updated", :id=>"emailSubmit") %>
+	<%# end %>
+	<%# link_to 'Apply', @typeform_url, class: "btn sign-home-btn", :id=>"emailSubmit" %>
+	<!-- </div> -->
+	<!-- </div> -->
+	<section id="about" class="row" data-sr>
+		<div class="col-md-12">
+			<h2 class="header">We are calling all the dreamers, movers, and creators to do something epic at this hackathon.</h2>
+			<p>This is an event that calls you, the hacker, to create something awesome. We give you the resources to fuel your creative engine, so you can ETC. If youwant to spend a weekend working with other brilliant creators, meeting established mentors, and getting free swag, then this is the event for you.</p>
 		</div>
-	</body>
-
-
-</html>
+	</section>
+	<section id="faq" class="row" data-sr>
+		<div class="col-md-12">
+			<h2 class="header">You got questions, we have answers.</h2>
+			<p>
+				<b>What's the application process look like?</b>
+				We're looking for creative and innovative people with a set of skills that can contribute to a project -- mobile, web, hardware, design, or anything else really cool.<br><br>
+				<b>When will applications close?</b>
+				The application will close June 5th at 11:59 EDT.<br><br>
+				<b>Who can apply?</b>
+				Any college, university, or high school student 15 years or older on September 1st is eligible to apply.<br><br>
+			</p>
+		</div>
+	</section>
+	<section id="sponsors" class="row" data-sr>
+		<div class="col-md-12">
+			<h2 class="header">The sponsors making our event possible.</h2>
+		</div>
+	</section>
+	<section id="contact" class="row" data-sr>
+		<div class="col-md-12">
+			<h2 class="header">Contact</h2>
+			<p>You can contact us at <a href="mailto:help@ugahacks.com">help@ugahacks.com</a>.</p>
+		</div>
+	</section>
+	<section id="register" class="row" data-sr>
+		<div class="col-md-12 text-center">
+			<iframe src="https://jaicob.typeform.com/to/rXE0ra" scrolling="no"></iframe>
+		</div>
+	</section>
+</div>
