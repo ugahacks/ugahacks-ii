@@ -1,23 +1,12 @@
 // Place all the styles related to the single_views controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-html {
-	background-image: url("/assets/images/bg.png");
-	background-color: #000000;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	   background-size: cover;
-}
 
-* {
-/* 	border: 1px solid white; */
-
+body {
+	background-color: #1a1a1a;
 }
 
 .container {
-	margin-top: 100px;
-	align-items: center;
 	text-align: center;
 }
 
@@ -46,6 +35,17 @@ h3 {
 
 
 #emailInput {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom-color: #ee2f33;
+	background: none;
+	color: white;
+	width: 600px;
+	padding: 15px 0px 0px 0px;
+}
+
+#emailInput:onfocus {
 	border-top: none;
 	border-left: none;
 	border-right: none;
@@ -114,3 +114,58 @@ input-placeholder {
 		width: 50%;
 	}
 }
+
+// NEW STUFF
+
+// body {
+// 	color: white;
+// 	background-color: #252824;
+// 	font-family: 'Open Sans', sans-serif;
+// }
+
+// .main-content {
+// 	padding-left: 225px;
+// 	padding-right: 225px;
+// }
+
+// .btn-reg {
+// 	background-color: #EE2F33;
+// 	width: 200px;
+// 	height: 50px;
+// 	font-size: 18pt;
+// 	border-radius: 5px;
+// 	cursor: pointer;
+// }
+// .btn-reg p {
+// 	text-align: center;
+// }
+
+// .nav ul {
+// 	float: right;	
+// }
+
+// a {
+// 	text-decoration: none;
+// 	color: white
+// }
+
+// .nav ul li {
+// 	text-decoration: none;
+// 	display: inline-block;
+// }
+
+// #contact {
+// 	background-color: white;
+// }
+
+// .emphasis {
+// 	color: #EE2F33;
+// }
+
+// #contact {
+// 	padding-left: 225px;
+// 	padding-right: 225px;
+// }
+// #contact h1 {
+// 	color: black;
+// }

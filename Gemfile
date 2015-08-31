@@ -10,6 +10,7 @@ ruby '2.2.0'
   gem 'turbolinks'
   gem 'jbuilder', '~> 2.0'
   gem 'gibbon'
+  gem "twitter-bootstrap-rails"
 
 
   group :development, :test do

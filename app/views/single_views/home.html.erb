@@ -9,23 +9,73 @@
 		<title>UGAHacks - Learn. Create. Share – Coming Soon!</title>
 		
 	</head>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	   
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#">About</a></li>
+	        <li><a href="#">FAQ</a></li>
+	        <li><a href="#">Sponsors</a></li>
+	        <li><a href="#">Contact</a></li>
+	       
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+</nav>
 	<body>
 		<div class="container">
-			<%= image_tag("logo.png", alt: " uga hackslogo", id:"logo") %>
-			
-			<h2>OCTOBER 23RD-25TH</h2>
-			<h3>LAMAR DODD SCHOOL OF ART</h3>
-			
-			<div class="emailSubmission">
-
-
-          	<%= form_tag('emailapi/subscribe', method: "post", id: "subscribe") do -%>
-    			<input id="emailInput" type="email" name="email" placeholder="email address"/>
-    			   				<br>
-
-   				<%= submit_tag("Keep Me Updated", :id=>"emailSubmit") %>
-			<% end %>
+			<div class="row">
+				<%= image_tag("logo.png", alt: " uga hackslogo", id:"logo") %>
+				
 			</div>
+			
+			<div class="row">
+			</div>
+
+			<div class="row">
+				<h2>OCTOBER 23RD-25TH</h2>
+				<br>
+				<br>
+				<h3>LAMAR DODD SCHOOL OF ART</h3>
+			</div>
+
+			<div class="row">
+				<div class="emailSubmission">
+	   <!--        	<%= form_tag('emailapi/subscribe', method: "post", id: "subscribe") do -%>
+	    			<input id="emailInput" type="email" name="email" placeholder="email address"/>
+	    			   				<br>
+	   				<%= submit_tag("Keep Me Updated", :id=>"emailSubmit") %>
+				<% end %> -->
+
+				<%= link_to 'Apply', @typeform_url, class: "btn sign-home-btn", :id=>"emailSubmit" %>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<h1> We are calling all the dreamers, movers and creators to do something epic. </h1>
+			</div>
+
+			<div class="row">
+				<h1> You got questions we have answers </h1>
+			</div>
+
+			<div class="row">
+				<h1>The sponsors making our event possible </h1>
+			</div>
+
+			<div class="row">
+				<h1> Ready to Rock? </h1>
+			</div>
+
 		</div>
 	</body>
+
+
 </html>
