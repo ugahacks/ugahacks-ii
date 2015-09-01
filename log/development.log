@@ -32185,3 +32185,2000 @@ Started GET "/assets/logo.png" for 127.0.0.1 at 2015-08-31 03:22:48 -0400
 
 
 Started GET "/assets/bg.png" for 127.0.0.1 at 2015-08-31 03:22:49 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-31 22:04:46 -0400
+Processing by SingleViewsController#home as HTML
+  Rendered single_views/home.html.erb within layouts/application (15.1ms)
+  Rendered layouts/partials/_navigation.html.erb (0.6ms)
+Completed 200 OK in 677ms (Views: 654.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2015-08-31 22:04:47 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.css?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/scrollReveal.js/dist/scrollReveal.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/single_views.css?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-sprockets"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.8ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (152.7ms)
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/single_views.js?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2015-08-31 22:04:48 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+Processing by SingleViewsController#home as HTML
+  Rendered single_views/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/partials/_navigation.html.erb (0.1ms)
+Completed 200 OK in 231ms (Views: 230.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/single_views.css?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.css?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-sprockets"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (129.4ms)
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/single_views.js?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/scrollReveal.js/dist/scrollReveal.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-08-31 22:07:07 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-31 22:12:45 -0400
+Processing by SingleViewsController#home as HTML
+  Rendered single_views/home.html.erb within layouts/application (25.3ms)
+  Rendered layouts/partials/_navigation.html.erb (0.1ms)
+Completed 200 OK in 1196ms (Views: 1188.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2015-08-31 22:12:46 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-08-31 22:12:46 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-08-31 22:12:46 -0400
+
+
+Started GET "/assets/single_views.css?body=1" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.css?body=1" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-sprockets"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (161.8ms)
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/single_views.js?body=1" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/scrollReveal.js/dist/scrollReveal.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2015-08-31 22:12:47 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2015-08-31 22:13:37 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-31 22:13:37 -0400
+
+
+Started GET "/assets/single_views.css?body=1" for 127.0.0.1 at 2015-08-31 22:13:37 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-08-31 22:13:37 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-08-31 22:13:37 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-31 22:13:37 -0400
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2015-08-31 22:13:37 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-sprockets"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (271.1ms)
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2015-08-31 22:13:38 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.css?body=1" for 127.0.0.1 at 2015-08-31 22:13:38 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-31 22:14:55 -0400
+Processing by SingleViewsController#home as HTML
+  Rendered single_views/home.html.erb within layouts/application (6.3ms)
+  Rendered layouts/partials/_navigation.html.erb (0.1ms)
+Completed 200 OK in 470ms (Views: 464.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2015-08-31 22:14:55 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-08-31 22:14:55 -0400
+
+
+Started GET "/assets/single_views.css?body=1" for 127.0.0.1 at 2015-08-31 22:14:55 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-31 22:14:55 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-08-31 22:14:55 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-31 22:14:55 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-31 22:14:55 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.css?body=1" for 127.0.0.1 at 2015-08-31 22:14:55 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-31 22:14:55 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-08-31 22:14:55 -0400
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2015-08-31 22:14:55 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-sprockets"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (191.2ms)
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2015-08-31 22:14:56 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-08-31 22:14:56 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-08-31 22:14:56 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-08-31 22:14:56 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-08-31 22:14:56 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-08-31 22:14:56 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-08-31 22:14:56 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-08-31 22:14:56 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-08-31 22:14:56 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-08-31 22:14:56 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-08-31 22:14:56 -0400
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:14:56 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-08-31 22:14:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-31 22:14:56 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:14:56 -0400
+
+
+Started GET "/assets/scrollReveal.js/dist/scrollReveal.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:14:56 -0400
+
+
+Started GET "/assets/single_views.js?body=1" for 127.0.0.1 at 2015-08-31 22:14:56 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:14:56 -0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-08-31 22:14:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-31 22:14:57 -0400
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2015-08-31 22:14:57 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-31 22:16:30 -0400
+Processing by SingleViewsController#home as HTML
+  Rendered single_views/home.html.erb within layouts/application (12.9ms)
+  Rendered layouts/partials/_navigation.html.erb (0.1ms)
+Completed 200 OK in 520ms (Views: 503.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/single_views.css?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.css?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-sprockets"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (140.2ms)
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/single_views.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/scrollReveal.js/dist/scrollReveal.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2015-08-31 22:16:31 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-31 22:16:54 -0400
+Processing by SingleViewsController#home as HTML
+  Rendered single_views/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/partials/_navigation.html.erb (0.1ms)
+Completed 200 OK in 278ms (Views: 277.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/single_views.css?body=1" for 127.0.0.1 at 2015-08-31 22:16:54 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2015-08-31 22:16:54 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-08-31 22:16:54 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-08-31 22:16:54 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.css?body=1" for 127.0.0.1 at 2015-08-31 22:16:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-31 22:16:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:54 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-31 22:16:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:54 -0400
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2015-08-31 22:16:54 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-sprockets"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (134.3ms)
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:54 -0400
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2015-08-31 22:16:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:54 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:55 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:55 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:55 -0400
+
+
+Started GET "/assets/single_views.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:55 -0400
+
+
+Started GET "/assets/scrollReveal.js/dist/scrollReveal.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:55 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:55 -0400
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:55 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:55 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-31 22:16:55 -0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-08-31 22:16:55 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-31 22:17:38 -0400
+Processing by SingleViewsController#home as HTML
+  Rendered single_views/home.html.erb within layouts/application (27.4ms)
+  Rendered layouts/partials/_navigation.html.erb (0.2ms)
+Completed 200 OK in 1332ms (Views: 1306.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2015-08-31 22:17:40 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-31 22:17:40 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-08-31 22:17:40 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-08-31 22:17:40 -0400
+
+
+Started GET "/assets/single_views.css?body=1" for 127.0.0.1 at 2015-08-31 22:17:40 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-31 22:17:40 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.css?body=1" for 127.0.0.1 at 2015-08-31 22:17:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-31 22:17:41 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-31 22:17:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-08-31 22:17:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-08-31 22:17:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-08-31 22:17:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-08-31 22:17:41 -0400
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2015-08-31 22:17:41 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-sprockets"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (154.2ms)
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2015-08-31 22:17:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-08-31 22:17:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-08-31 22:17:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-08-31 22:17:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-08-31 22:17:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-08-31 22:17:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-08-31 22:17:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-08-31 22:17:41 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-31 22:17:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:17:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-08-31 22:17:41 -0400
+
+
+Started GET "/assets/single_views.js?body=1" for 127.0.0.1 at 2015-08-31 22:17:41 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:17:41 -0400
+
+
+Started GET "/assets/scrollReveal.js/dist/scrollReveal.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:17:41 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:17:41 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-31 22:17:41 -0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-08-31 22:17:41 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-31 22:19:09 -0400
+Processing by SingleViewsController#home as HTML
+  Rendered single_views/home.html.erb within layouts/application (9.8ms)
+WARNING on line 6 of /Users/jaicob/Development/UGAHacks/ugahacks/app/assets/stylesheets/single_views.sass:
+This selector doesn't have any properties and will not be rendered.
+
+Completed 500 Internal Server Error in 198ms
+
+ActionView::Template::Error (Invalid CSS after "color:": expected pseudoclass or pseudoelement, was "#EE3031"
+  (in /Users/jaicob/Development/UGAHacks/ugahacks/app/assets/stylesheets/single_views.sass:6)):
+    2: <html>
+    3: <head>
+    4:   <title><%= yield(:title) %> | UGA Hacks</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width, initial-scale=1">
+  app/assets/stylesheets/single_views.sass:6
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___4277288471299960808_70279665766660'
+
+
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (113.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-31 22:19:51 -0400
+Processing by SingleViewsController#home as HTML
+  Rendered single_views/home.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 42ms
+
+ActionView::Template::Error (Invalid CSS after "color:": expected pseudoclass or pseudoelement, was "#EE3031"
+  (in /Users/jaicob/Development/UGAHacks/ugahacks/app/assets/stylesheets/single_views.sass:6)):
+    2: <html>
+    3: <head>
+    4:   <title><%= yield(:title) %> | UGA Hacks</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width, initial-scale=1">
+  app/assets/stylesheets/single_views.sass:6
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___4277288471299960808_70279665766660'
+
+
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (93.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-31 22:19:53 -0400
+Processing by SingleViewsController#home as HTML
+  Rendered single_views/home.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 34ms
+
+ActionView::Template::Error (Invalid CSS after "color:": expected pseudoclass or pseudoelement, was "#EE3031"
+  (in /Users/jaicob/Development/UGAHacks/ugahacks/app/assets/stylesheets/single_views.sass:6)):
+    2: <html>
+    3: <head>
+    4:   <title><%= yield(:title) %> | UGA Hacks</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width, initial-scale=1">
+  app/assets/stylesheets/single_views.sass:6
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___4277288471299960808_70279665766660'
+
+
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (99.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-31 22:20:00 -0400
+Processing by SingleViewsController#home as HTML
+  Rendered single_views/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/partials/_navigation.html.erb (0.1ms)
+Completed 200 OK in 296ms (Views: 294.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2015-08-31 22:20:00 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.css?body=1" for 127.0.0.1 at 2015-08-31 22:20:00 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-08-31 22:20:00 -0400
+
+
+Started GET "/assets/single_views.css?body=1" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-sprockets"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (133.4ms)
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/single_views.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/scrollReveal.js/dist/scrollReveal.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2015-08-31 22:20:01 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-31 22:20:29 -0400
+Processing by SingleViewsController#home as HTML
+  Rendered single_views/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/partials/_navigation.html.erb (0.1ms)
+Completed 200 OK in 306ms (Views: 305.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2015-08-31 22:20:29 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-08-31 22:20:29 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-31 22:20:29 -0400
+
+
+Started GET "/assets/single_views.css?body=1" for 127.0.0.1 at 2015-08-31 22:20:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-31 22:20:29 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-08-31 22:20:29 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.css?body=1" for 127.0.0.1 at 2015-08-31 22:20:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:29 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:29 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:29 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:29 -0400
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2015-08-31 22:20:29 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-sprockets"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (168.1ms)
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2015-08-31 22:20:30 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:30 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:30 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:30 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:30 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:30 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:30 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:30 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:30 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:30 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:30 -0400
+
+
+Started GET "/assets/single_views.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:30 -0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-08-31 22:20:30 -0400
+
+
+Started GET "/assets/scrollReveal.js/dist/scrollReveal.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:30 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:30 -0400
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:30 -0400
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2015-08-31 22:20:30 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-31 22:20:47 -0400
+Processing by SingleViewsController#home as HTML
+  Rendered single_views/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/partials/_navigation.html.erb (0.1ms)
+Completed 200 OK in 253ms (Views: 252.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/single_views.css?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.css?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-sprockets"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (136.5ms)
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/single_views.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/scrollReveal.js/dist/scrollReveal.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2015-08-31 22:20:48 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-31 22:22:39 -0400
+Processing by SingleViewsController#home as HTML
+  Rendered single_views/home.html.erb within layouts/application (7.0ms)
+  Rendered layouts/partials/_navigation.html.erb (0.1ms)
+Completed 200 OK in 533ms (Views: 526.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-08-31 22:22:40 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-08-31 22:22:40 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-31 22:22:40 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2015-08-31 22:22:40 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-31 22:22:40 -0400
+
+
+Started GET "/assets/single_views.css?body=1" for 127.0.0.1 at 2015-08-31 22:22:40 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.css?body=1" for 127.0.0.1 at 2015-08-31 22:22:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:40 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:40 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:40 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:40 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:40 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:40 -0400
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2015-08-31 22:22:40 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-sprockets"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (167.3ms)
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2015-08-31 22:22:40 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:40 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:40 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:40 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:40 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:40 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:40 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:41 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:41 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:41 -0400
+
+
+Started GET "/assets/single_views.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:41 -0400
+
+
+Started GET "/assets/scrollReveal.js/dist/scrollReveal.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:41 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:41 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:41 -0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-08-31 22:22:41 -0400
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2015-08-31 22:22:41 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-31 22:22:47 -0400
+Processing by SingleViewsController#home as HTML
+  Rendered single_views/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/partials/_navigation.html.erb (0.1ms)
+Completed 200 OK in 278ms (Views: 277.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/single_views.css?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.css?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-sprockets"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (142.0ms)
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/single_views.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/scrollReveal.js/dist/scrollReveal.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2015-08-31 22:22:48 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-31 22:23:41 -0400
+Processing by SingleViewsController#home as HTML
+  Rendered single_views/home.html.erb within layouts/application (7.5ms)
+  Rendered layouts/partials/_navigation.html.erb (0.1ms)
+Completed 200 OK in 972ms (Views: 964.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2015-08-31 22:23:42 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-08-31 22:23:42 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-08-31 22:23:42 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.css?body=1" for 127.0.0.1 at 2015-08-31 22:23:42 -0400
+
+
+Started GET "/assets/single_views.css?body=1" for 127.0.0.1 at 2015-08-31 22:23:42 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-31 22:23:42 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-31 22:23:42 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-31 22:23:42 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-08-31 22:23:42 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-08-31 22:23:42 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-08-31 22:23:42 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-08-31 22:23:42 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-31 22:23:42 -0400
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2015-08-31 22:23:42 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-sprockets"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.6ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (249.8ms)
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2015-08-31 22:23:42 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-08-31 22:23:42 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-08-31 22:23:42 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-08-31 22:23:42 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-08-31 22:23:43 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-08-31 22:23:43 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-08-31 22:23:43 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-08-31 22:23:43 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-08-31 22:23:43 -0400
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:23:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-31 22:23:43 -0400
+
+
+Started GET "/assets/single_views.js?body=1" for 127.0.0.1 at 2015-08-31 22:23:43 -0400
+
+
+Started GET "/assets/scrollReveal.js/dist/scrollReveal.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:23:43 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:23:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-31 22:23:43 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:23:43 -0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-08-31 22:23:43 -0400
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2015-08-31 22:23:43 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+Processing by SingleViewsController#home as HTML
+  Rendered single_views/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/partials/_navigation.html.erb (0.1ms)
+Completed 200 OK in 250ms (Views: 249.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/single_views.css?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.css?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/bootstrap" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/bootstrap-sprockets" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap-sprockets"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/jaicob/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (142.9ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/single_views.js?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/fakeLoader/fakeLoader.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/scrollReveal.js/dist/scrollReveal.min.js?body=1" for 127.0.0.1 at 2015-08-31 22:24:57 -0400
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2015-08-31 22:24:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-08-31 22:24:58 -0400
+
+
+Started GET "/assets/bg.png" for 127.0.0.1 at 2015-08-31 22:24:58 -0400
