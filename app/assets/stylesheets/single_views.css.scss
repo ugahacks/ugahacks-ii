@@ -1,0 +1,171 @@
+// Place all the styles related to the single_views controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	background-color: #1a1a1a;
+}
+
+.container {
+	text-align: center;
+}
+
+#logo {
+	position: relative;
+}
+
+
+h2,
+h3 {
+	color: #ffffff;
+}
+
+h2 {
+	font-family: gotham medium, sans-serif;
+	font-size: 40pt;
+	margin-top: 5px;
+	padding: 0;
+}
+
+h3 {
+	font-family: gotham medium, sans-serif;
+	font-size: 26.5pt;
+	margin-top: -50px;
+}
+
+
+#emailInput {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom-color: #ee2f33;
+	background: none;
+	color: white;
+	width: 600px;
+	padding: 15px 0px 0px 0px;
+}
+
+#emailInput:onfocus {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom-color: #ee2f33;
+	background: none;
+	color: white;
+	width: 600px;
+	padding: 15px 0px 0px 0px;
+}
+
+input {
+	font-size: 15pt;
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+input-placeholder {
+	font-family: gotham book;
+	font-size: 30pt;
+	
+}
+
+#emailSubmit {
+	color: #ffffff;
+	background: #ee2f33;
+	border: none;
+	border-radius: 5px;
+	width: 200px;
+	height: 50px;
+	font-family: gotham book, sans-serif;	
+	margin-top: 25px;
+	margin-bottom: 50px;
+	font-size: 15pt;
+	cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+   font-family: gotham book, sans-serif;
+   font-size: 15pt;
+}
+::-webkit-input [type="text"] {
+	text-align: center;
+	font-family: gotham book, sans-serif;
+	font-size: 30pt;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center; 
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}
+
+@media (max-width: 480px) {
+	html {
+		background-size: auto;
+	}
+	#logo {
+		height: 50%;
+		width: 50%;
+	}
+}
+
+// NEW STUFF
+
+// body {
+// 	color: white;
+// 	background-color: #252824;
+// 	font-family: 'Open Sans', sans-serif;
+// }
+
+// .main-content {
+// 	padding-left: 225px;
+// 	padding-right: 225px;
+// }
+
+// .btn-reg {
+// 	background-color: #EE2F33;
+// 	width: 200px;
+// 	height: 50px;
+// 	font-size: 18pt;
+// 	border-radius: 5px;
+// 	cursor: pointer;
+// }
+// .btn-reg p {
+// 	text-align: center;
+// }
+
+// .nav ul {
+// 	float: right;	
+// }
+
+// a {
+// 	text-decoration: none;
+// 	color: white
+// }
+
+// .nav ul li {
+// 	text-decoration: none;
+// 	display: inline-block;
+// }
+
+// #contact {
+// 	background-color: white;
+// }
+
+// .emphasis {
+// 	color: #EE2F33;
+// }
+
+// #contact {
+// 	padding-left: 225px;
+// 	padding-right: 225px;
+// }
+// #contact h1 {
+// 	color: black;
+// }
