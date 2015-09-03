@@ -102,3 +102,5 @@ Z-notes.rb
 /vendor/assets/*
 /vendor/assets/bower_components/
 
+/public/assets/
+/logs/
