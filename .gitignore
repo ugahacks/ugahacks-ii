@@ -104,3 +104,4 @@ Z-notes.rb
 
 /public/assets/
 /log/
+/node_modules/*
