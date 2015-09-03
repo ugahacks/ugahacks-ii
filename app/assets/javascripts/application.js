@@ -5,6 +5,7 @@
 //= require_tree .
 //= require scrollReveal.js/dist/scrollReveal.min.js
 //= require fakeloader/fakeLoader.min.js
+//= require bootstrap/dist/js/bootstrap.js
 
 $(document).ready(function() {
   // animates elements to scroll into view when viewport shifts
