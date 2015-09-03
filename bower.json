@@ -1,0 +1,7 @@
+{
+  "name": "dsl-generated dependencies",
+  "dependencies": {
+    "scrollReveal.js": "2.3.2",
+    "fakeloader": "latest"
+  }
+}
