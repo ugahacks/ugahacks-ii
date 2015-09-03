@@ -1,6 +1,7 @@
 /*
  *= require_tree .
  *= require_self
+<<<<<<< HEAD
  *= require fakeloader/fakeLoader.css
  *= require bootstrap/dist/css/bootstrap.min.css
  *= require bootstrap/dist/css/bootstrap-theme.min.css
