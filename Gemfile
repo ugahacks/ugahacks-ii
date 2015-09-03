@@ -12,7 +12,6 @@ ruby '2.2.0'
   gem 'gibbon'
   gem 'bootstrap-sass', '3.2.0.2'
   gem "twitter-bootstrap-rails"
-  gem "bower-rails", "~> 0.10.0"
   gem 'execjs'
   gem 'asset_sync'
 
