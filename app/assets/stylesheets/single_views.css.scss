@@ -21,14 +21,14 @@ h3 {
 }
 
 h2 {
-	font-family: gotham medium, sans-serif;
+	font-family: gotham bold, sans-serif;
 	font-size: 40pt;
 	margin-top: 5px;
 	padding: 0;
 }
 
 h3 {
-	font-family: gotham medium, sans-serif;
+	font-family: gotham bold, sans-serif;
 	font-size: 26.5pt;
 	margin-top: -50px;
 }
@@ -113,6 +113,16 @@ input-placeholder {
 		height: 50%;
 		width: 50%;
 	}
+}
+
+@font-face {
+    font-family: gotham book;
+    src: url("assets/fonts/copyfonts.com_gotham_book.ttf");
+}
+
+@font-face {
+	font-family: gotham bold;
+	src: url("assets/fonts/copyfonts.com_gotham_bold.ttf")
 }
 
 // NEW STUFF
