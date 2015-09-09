@@ -7,11 +7,15 @@
   */
 
   .navbar {
-    background-color: #1a1a1a;
+    background-color: #000000;
     border:none;
 }
 
 
 .btn-danger {
 	background-color:#EE3031;
+}
+
+.btn {
+	background-color: #EE3031;
 }

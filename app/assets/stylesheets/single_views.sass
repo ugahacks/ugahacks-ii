@@ -11,18 +11,16 @@
 	color: #EE3031
 
 body
-	background: 
-		image-url("bg.png") no-repeat,
-		image-url("bg-2.png") no-repeat,
-		image-url("bg-3.png")
+	background-image: url("bg.png"), url("bg-2.png"), url("bg-3.png")
 	#main-content
 		padding-top: 50px
 		margin-top: 50px
+		text-align: center
 		.spotlight
 			height: 100vh
+
 #logo
 	margin: auto
-	padding: 20px
 section
 	padding: 100px 0 100px 0
 	&.row
@@ -33,6 +31,17 @@ section
 		margin-bottom: 20px
 .jumbotron.spotlight
 	background: transparent
+#red-btn
+	margin-top: 25px
+	background-color: #EE3031
+#red-btn:hover
+	color: #FFFFFF
+	cursor: auto
+#down-arrow
+	margin-top: 25px
+#about
+	padding-left: 100px
+	padding-right: 100px
 #register
 	background: white
 	color: black
@@ -41,6 +50,9 @@ section
 	margin-top: 50px
 	margin-bottom: 50px
 	border-radius: 10px
+	margin-right: auto
+	margin-left: auto
+	width: 100%
 	iframe
 		border: 0
 		display: block
