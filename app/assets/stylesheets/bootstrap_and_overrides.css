@@ -6,7 +6,7 @@
   =require twitter-bootstrap-static/fontawesome
   */
 body {
-	background-image: url("bg.png");
+	background-color: #1a1a1a;
 }
   .navbar {
     background-color: #000000;
