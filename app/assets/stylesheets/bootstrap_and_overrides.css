@@ -19,3 +19,13 @@
 .btn {
 	background-color: #EE3031;
 }
+
+@font-face {
+    font-family: gotham book;
+    src: url("assets/fonts/copyfonts.com_gotham_book.ttf");
+}
+
+@font-face {
+	font-family: gotham bold;
+	src: url("assets/fonts/copyfonts.com_gotham_bold.ttf")
+}
