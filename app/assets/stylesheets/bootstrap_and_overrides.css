@@ -22,6 +22,10 @@ body {
 	background-color: #EE3031;
 }
 
+.panel {
+	border: none;
+}
+
 @font-face {
     font-family: gotham book;
     src: url("assets/fonts/copyfonts.com_gotham_book.ttf");
