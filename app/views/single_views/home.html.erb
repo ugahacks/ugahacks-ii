@@ -1,3 +1,15 @@
+<style>
+	#faq {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.ugahacks-panel {
+		background: #EE3031;
+	}
+	.panels {
+		display: block;
+	}
+</style>
 <div id="main-content" class="container">
 	<div class="row text-center">
 		<%= image_tag("logo.png",
@@ -51,15 +63,68 @@
 	<section id="faq" class="row" data-sr>
 		<div class="col-md-12">
 			<h2 class="header">You got <span class="red-text">questions</span>, we have <span class="red-text">answers.</span></h2>
-			<p>
-				<b>What's the application process look like?</b>
-				We're looking for creative and innovative people that can contribute to a project or are willing to learn something new.<br><br>
-				<b>When will applications close?</b>
-				The application will close October 1st at 11:59pm EDT.<br><br>
-				<b>Who can apply?</b>
-				Any college or university student 18 years or older on October 22nd is eligible to apply.<br><br>
-			</p>
-		</div>
+			<div class="col-xs-12 col-sm-6 col-md-3 panels">
+				<div class="panel panel-primary ugahacks-panel" data-toggle="collapse">
+					<div class="panel-heading">
+						<h4>Can I attend?</h4>
+					</div>
+					<div class="panel-body">High school, undergraduate, and graduate students are welcome to hack. Professionals are welcome to join as mentors, sponsors, or lecturers.
+					</div>
+				</div>
+				<div class="panel panel-primary ugahacks-panel">
+					<div class="panel-heading">
+						<h4>What is it?</h4>
+					</div>
+					<div class="panel-body">A weekend of fun and learning. You'll become a better programmer, meet new people, and make cool stuff. You'll also have the chance to learn a lot and get loads of free stuff!
+					</div>
+				</div>
+				<div class="panel panel-primary ugahacks-panel">
+					<div class="panel-heading">
+						<h4>Will there be food?</h4>
+					</div>
+					<div class="panel-body">Don’t worry. We’ll provide six full meals throughout the hackathon and there will be plenty of snacks in between. You won’t be hungry.
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<div class="panel panel-primary ugahacks-panel">
+					<div class="panel-heading">
+						<h4>What can we hack?</h4>
+					</div>
+					<div class="panel-body">HackNC is both a software and hardware hackathon. Code for web, mobile, desktop, and hack away at hardware to your heart's content.
+					</div>
+				</div>
+				<div class="panel panel-primary ugahacks-panel">
+					<div class="panel-heading">
+						<h4>Can I use old code?</h4>
+					</div>
+					<div class="panel-body">You may use all the publicly available code and APIs that you want but the code you will be judged on at the end of the hackathon must be new.
+					</div>
+				</div>
+				<div class="panel panel-primary ugahacks-panel">
+					<div class="panel-heading">
+						<h4>Admission decisions?</h4>
+					</div>
+					<div class="panel-body">Admission decisions will be announced on August 22 for early admission and September 12th for regular admission. Afterwards, we will review applications on a case-by-case basis.
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<div class="panel panel-primary ugahacks-panel">
+					<div class="panel-heading">
+						<h4>What about sleep?</h4>
+					</div>
+					<div class="panel-body">Bring your own pillow and bedding. There will be a sleeping space available Friday and Saturday nights. If you'd prefer a hotel room, the Carolina Inn is only 200 feet away (although very expensive).
+					</div>
+				</div>
+				<div class="panel panel-primary ugahacks-panel">
+					<div class="panel-heading">
+						<h4>Hardware?</h4>
+					</div>
+					<div class="panel-body">MLH is providing the full hardware lab. In addition we will have soldering and assorted components, Arduinos, Raspberry Pis, and more Pebbles than you can wear on four limbs...
+					</div>
+				</div>
+		</div><br/>
 		<a href="#sponsors"><%= image_tag("arrow-down2.png",
 		class: "img-responsive",
 		alt: "transition arrow",
