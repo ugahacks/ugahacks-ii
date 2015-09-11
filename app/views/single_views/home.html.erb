@@ -1,26 +1,27 @@
 <style>
 	.panel { border: none; }	
 </style>
-<body style="background-image: url("bg.png")"><div id="main-content" class="container">
-	<div class="row text-center" data-sr="wait .66">
-		<%= image_tag("logo.png",
-		class: "img-responsive",
-		alt: "ugahacks logo",
-		id: "logo"
-		) %>
-	</div>
-	<div class="jumbotron spotlight">
-		<h1 data-sr="wait 1.32s">OCTOBER 23-25, 2015</h1>
-		<h2 data-sr="wait 1.98s">LAMAR DODD SCHOOL OF ART || ATHENS, GA</h2>
-		<a href="#register" data-sr="wait 2.74s"><div class="btn btn-lg" id="red-btn">Register</div></a><br/>
-		<a href="#about"><!--
-<%= image_tag("arrow-down.png",
-		class: "img-responsive",
-		alt: "transition arrow",
-		id: "arrow-d"
-		) %>
---><span class="glyphicon glyphicon-menu-down" id="arrow" aria-hidden="true" style="width: 50px;" data-sr="wait 3.4s"></span></a>	
-	</div>
+<body>
+	<div id="main-content" class="container">
+		<div class="row text-center" data-sr="wait .66">
+			<%= image_tag("logo.png",
+			class: "img-responsive",
+			alt: "ugahacks logo",
+			id: "logo"
+			) %>
+		</div>
+		<div class="jumbotron spotlight">
+			<h1 data-sr="wait 1.32s">OCTOBER 23-25, 2015</h1>
+			<h2 data-sr="wait 1.98s">LAMAR DODD SCHOOL OF ART || ATHENS, GA</h2>
+			<a href="#register" data-sr="wait 2.74s"><div class="btn btn-lg" id="red-btn">Register</div></a><br/>
+			<a href="#about"><!--
+				<%= image_tag("arrow-down.png",
+						class: "img-responsive",
+						alt: "transition arrow",
+						id: "arrow-d"
+						) %>
+				--><span class="glyphicon glyphicon-menu-down" id="arrow" aria-hidden="true" style="width: 50px;" data-sr="wait 3.4s"></span></a>	
+		</div>
 
 	<section id="about" class="row" data-sr>
 		<div class="col-md-12">
@@ -183,7 +184,7 @@
 	</section>
 -->
 </div>
-<div class="container" id="reg-container" data-sr="over 1s">
+<div class="container" id="reg-container" data-sr="over 1s" data-background="#FFFFFF">
 	<section id="register" class="row">
 		<div class="col-md-12 text-center" id="inside" data-sr="wait 1s">
 			<iframe src="https://jaicob.typeform.com/to/rXE0ra" scrolling="no"></iframe>
