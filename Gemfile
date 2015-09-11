@@ -10,8 +10,8 @@ ruby '2.2.0'
   gem 'turbolinks'
   gem 'jbuilder', '~> 2.0'
   gem 'gibbon'
-  gem 'bootstrap-sass', '3.2.0.2'
   gem "twitter-bootstrap-rails"
+  gem 'bootstrap-sass', '3.2.0.2'
   gem 'execjs'
 
 

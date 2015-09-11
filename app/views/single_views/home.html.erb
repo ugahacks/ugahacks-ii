@@ -1,35 +1,128 @@
-<div id="main-content" class="container">
-	<div class="row text-center">
-		<%= image_tag("logo.png",
-		class: "img-responsive",
-		alt: "ugahacks logo",
-		id: "logo"
-		) %>
-	</div>
-	<div class="jumbotron spotlight">
-		<h1>36 hours. 1 hackathon.</h1>
-		<h2>Join us for an event full of motivated hackers, just like you.</h2>
-		<a href="#register"><div class="btn btn-danger btn-lg">Register</div></a>
-	</div>
+<style>
+	.panel { border: none; }	
+</style>
+<body>
+	<div id="main-content" class="container">
+		<div class="row text-center" data-sr="wait .66">
+			<%= image_tag("logo.png",
+			class: "img-responsive",
+			alt: "ugahacks logo",
+			id: "logo"
+			) %>
+		</div>
+		<div class="jumbotron spotlight">
+			<h1 data-sr="wait 1.32s">OCTOBER 23-25, 2015</h1>
+			<h2 data-sr="wait 1.98s">LAMAR DODD SCHOOL OF ART || ATHENS, GA</h2>
+			<a href="#register" data-sr="wait 2.74s"><div class="btn btn-lg" id="red-btn">Register</div></a><br/>
+			<a href="#about"><!--
+				<%= image_tag("arrow-down.png",
+						class: "img-responsive",
+						alt: "transition arrow",
+						id: "arrow-d"
+						) %>
+				--><span class="glyphicon glyphicon-menu-down" id="arrow" aria-hidden="true" style="width: 50px;" data-sr="wait 3.4s"></span></a>	
+		</div>
 
 	<section id="about" class="row" data-sr>
 		<div class="col-md-12">
-			<h2 class="header">We are calling all the <span class="red-text">dreamers</span>, <span class="red-text">movers</span>, and <span class="red-text">creators</span> to do something epic at this hackathon.</h2>
-			<p>This is an event that calls you, the hacker, to create something awesome. We give you the resources to fuel your creative engine. If you want to spend a weekend working with other brilliant creators, meeting established mentors, and getting free swag, then this is the event for you.</p>
+			<h2 class="header">This one is for all the <span class="red-text">dreamers</span>. All the <span class="red-text">movers</span>. All the <span class="red-text">creators</span>.<br/>Welcome to the <span class="red-text">University of Georgia</span>'s inaugural hackathon.</h2>
+			<p data-sr="wait .75s">We're calling hackers and innovators of all kinds – designers, coders, engineers, developers, modern athletes, gods, etc. – to come with an idea, with a passion, and with a drive to emerge from beneath the surface and create something out of nothing. So here's to you, the digital artist about to take another step, or perhaps your first step, to joining our global community of creators.</p>
+			<p data-sr="wait 1.5s">Make an impact and Happy Hacking</p>
+			<p class="about-footer" data-sr="wait 1.5s">– Love, UGAHacks Team</p>
 		</div>
+		<div class="col-md-12" id="timeline" data-sr="wait 2.25s">
+			<div class="progress">
+				<div class="progress-bar-ugahacks" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width: 33%">
+					<span>Applications released!</span>
+	  			</div>
+			</div>
+		</div>
+		<a href="#schedule"><!--
+<%= image_tag("arrow-down2.png",
+		class: "img-responsive",
+		alt: "transition arrow",
+		id: "arrow"
+		) %>
+--><span class="glyphicon glyphicon-menu-down" id="arrow" aria-hidden="true" style="width: 50px;"></span></a>	
 	</section>
+	<section id="schedule" class="row" data-sr>
+		<div class="col-md-12">
+			<h2 class="header">Schedule Coming <span class="red-text">Soon</span>!</h2>
+		</div>
+		<a href="#faq"><!--
+<%= image_tag("arrow-down2.png",
+		class: "img-responsive",
+		alt: "transition arrow",
+		id: "arrow"
+		) %>
+--><span class="glyphicon glyphicon-menu-down" id="arrow" aria-hidden="true" style="width: 50px;"></span></a>	
+	</section>
+	
 	<section id="faq" class="row" data-sr>
 		<div class="col-md-12">
 			<h2 class="header">You got <span class="red-text">questions</span>, we have <span class="red-text">answers.</span></h2>
-			<p>
-				<b>What's the application process look like?</b>
-				We're looking for creative and innovative people that can contribute to a project or are willing to learn something new.<br><br>
-				<b>When will applications close?</b>
-				The application will close October 1st at 11:59pm EDT.<br><br>
-				<b>Who can apply?</b>
-				Any college or university student 18 years or older on October 22nd is eligible to apply.<br><br>
-			</p>
-		</div>
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<div class="panel ugahacks-panel">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">Can I Hack?</h3>
+				  </div>
+				  <div class="panel-body">
+				    All undergraduate and graduate students are welcome to hack. Professionals are welcome to join as mentors, sponsors, or lecturers.
+				  </div>
+				</div>
+				<div class="panel ugahacks-panel">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">What about food?</h3>
+				  </div>
+				  <div class="panel-body">
+				    We got the best caterers from all over town to make sure you are fed in the spirit of southern hospitality!
+				  </div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<div class="panel ugahacks-panel">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">What Can I Hack?</h3>
+				  </div>
+				  <div class="panel-body">
+				    Anything! Glue your eyes to lines upon lines of code or hack all the hardware you want!
+				  </div>
+				</div>
+				<div class="panel ugahacks-panel">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">Where Can I Sleep?</h3>
+				  </div>
+				  <div class="panel-body">
+				    Even hackers need some beauty sleep! And for that we'll have accommodations ready.
+				  </div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<div class="panel ugahacks-panel">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">When will the application close?</h3>
+				  </div>
+				  <div class="panel-body">
+				    The app to hack will close on October 1st at 11:59 PM.
+				  </div>
+				</div>
+				<div class="panel ugahacks-panel">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">Do you offer travel reimbursement?</h3>
+				  </div>
+				  <div class="panel-body">
+				    Please state that you are seeking a travel reimbursement on your application. Travel will be reimbused up to a maximum amount, which will be announced when you are admitted.
+				  </div>
+				</div>
+			</div>
+		</div><br/>
+		<a href="#sponsors"><!--
+<%= image_tag("arrow-down2.png",
+		class: "img-responsive",
+		alt: "transition arrow",
+		id: "arrow"
+		) %>
+--><span class="glyphicon glyphicon-menu-down" id="arrow" aria-hidden="true" style="width: 50px;"></span></a>	
 	</section>
 	<section id="sponsors" class="row" data-sr>
 		<div class="col-md-12">
@@ -68,21 +161,40 @@
 					</div>
 				</div>
 			</div>
-
-			
 		</div>
+		<a href="#register"><!--
+<%= image_tag("arrow-down2.png",
+		class: "img-responsive",
+		alt: "transition arrow",
+		id: "arrow"
+		) %>
+--><span class="glyphicon glyphicon-menu-down" id="arrow" aria-hidden="true" style="width: 50px;"></span></a>	
 	</section>
-
-
+<!--
 	<section id="contact" class="row" data-sr>
 		<div class="col-md-12">
 			<h2 class="header">Contact</h2>
 			<p>You can contact us at <a href="mailto:help@ugahacks.com">help@ugahacks.com</a>.</p>
 		</div>
+		<a href="#register"><%= image_tag("arrow-down2.png",
+		class: "img-responsive",
+		alt: "transition arrow",
+		id: "arrow"
+		) %></a>	
 	</section>
-	<section id="register" class="row" data-sr>
-		<div class="col-md-12 text-center">
+-->
+</div>
+<div class="container" id="reg-container" data-sr="over 1s" data-background="#FFFFFF">
+	<section id="register" class="row">
+		<div class="col-md-12 text-center" id="inside" data-sr="wait 1s">
 			<iframe src="https://jaicob.typeform.com/to/rXE0ra" scrolling="no"></iframe>
 		</div>
+		<a href="#main-content"><!--
+<%= image_tag("arrow-up.png",
+		class: "img-responsive",
+		alt: "transition arrow",
+		id: "arrow-u"
+		) %>
+--><span class="glyphicon glyphicon-menu-up" id="arrow" aria-hidden="true" style="color: #000000;"></span></a>	
 	</section>
-</div>
+</div></body>

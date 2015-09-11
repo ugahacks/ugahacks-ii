@@ -9,17 +9,35 @@
 
 .red-text
 	color: #EE3031
+	
+.navbar-black
+	background-color: #000000
+	li
+		text-decoration: none
 
 body
-	background: image-url("bg.png")
+	background-color: #1a1a1a
+	background-image: url("bg.png")
+	transition: background 1s ease
 	#main-content
 		padding-top: 50px
 		margin-top: 50px
+		text-align: center
 		.spotlight
 			height: 100vh
+		font-family: gotham book
+		h1,
+		h2,
+		h3
+			font-family: gotham bold
+		
+
 #logo
 	margin: auto
-	padding: 20px
+.spotlight
+	h1
+		padding-top: -50px
+		padding-bottom: -50px
 section
 	padding: 100px 0 100px 0
 	&.row
@@ -30,7 +48,73 @@ section
 		margin-bottom: 20px
 .jumbotron.spotlight
 	background: transparent
+#red-btn
+	margin-top: 25px
+	background-color: #EE3031
+#red-btn:hover
+	color: #FFFFFF
+	cursor: auto
+.progress-bar
+	background-image: none
+	background-color: #EE3031
+.progress-bar-ugahacks
+	background-image: none
+	background-color: #EE3031
+#arrow-d
+	margin-top: 25px
+	width: 36px
+	margin-left: auto
+	margin-right: auto
+#arrow-u
+	font-size: 50px
+	align: center
+	margin-left: auto
+	margin-right: auto
+#arrow
+	font-size: 50px
+	margin-top: 20px
+	margin-left: auto
+	margin-right: auto
+	position: relative
+	text-align: center
+#about
+	padding-left: 75px
+	padding-right: 75px
+	p
+		font-size: 16px
+	.about-footer
+		font-size: 12px
+		margin-left: 475px
+#schedule
+	padding-top: 250px
+.panel
+	margin-left: auto
+	margin-right: auto
+	height: 200px
+	border: none
+	.panel-heading
+		background-image: none
+		background-color: #EE3031
+		.panel-title
+			color: #FFFFFF
+	.panel-body
+		color: #000000
+		text-align: left
+.ugahacks-panel
+	border: none
+	.panel-heading
+		background-image: none
+		background-color: #EE3031
+		border: none
+#contact
+	margin-bottom: 100px
+#reg-container
+	height: 95%
+	background-color: white
+	width: 100%
+	align-content: center
 #register
+	text-align: center
 	background: white
 	color: black
 	text-transform: uppercase
@@ -38,6 +122,9 @@ section
 	margin-top: 50px
 	margin-bottom: 50px
 	border-radius: 10px
+	margin-right: auto
+	margin-left: auto
+	width: 100%
 	iframe
 		border: 0
 		display: block
