@@ -1,6 +1,11 @@
 // Place all the styles related to the single_views controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$main-color: #EE3031
+$accent-color: #1a1a1a
+$white: #ffffff
+
 .sponsor-row
 	margin-bottom: 15px
 
@@ -8,16 +13,16 @@
 	color: white
 
 .red-text
-	color: #EE3031
-	
+	color: $main-color
+
 .navbar-black
 	background-color: #000000
 	li
 		text-decoration: none
 
 body
-	background-color: #1a1a1a
-	background-image: url("bg.png")
+	background-color: $accent-color
+	background-image: asset-url("bg.png")
 	transition: background 1s ease
 	#main-content
 		padding-top: 50px
@@ -25,16 +30,19 @@ body
 		text-align: center
 		.spotlight
 			height: 100vh
-		font-family: gotham book
+		font-family: "Gotham Book"
 		h1,
 		h2,
 		h3
-			font-family: gotham bold
-		
+			font-family: "Gotham Medium"
+		h2
+			margin-top: 3px
 
 #logo
 	margin: auto
 .spotlight
+	h1, h2
+		font-family: "Gotham Bold"
 	h1
 		padding-top: -50px
 		padding-bottom: -50px
@@ -50,16 +58,16 @@ section
 	background: transparent
 #red-btn
 	margin-top: 25px
-	background-color: #EE3031
+	background-color: $main-color
 #red-btn:hover
-	color: #FFFFFF
+	color: $white
 	cursor: auto
 .progress-bar
 	background-image: none
-	background-color: #EE3031
+	background-color: $main-color
 .progress-bar-ugahacks
 	background-image: none
-	background-color: #EE3031
+	background-color: $main-color
 #arrow-d
 	margin-top: 25px
 	width: 36px
@@ -94,18 +102,17 @@ section
 	border: none
 	.panel-heading
 		background-image: none
-		background-color: #EE3031
+		background-color: $main-color
 		.panel-title
-			color: #FFFFFF
+		font-family: "Gotham Bold"
+			color: $white
 	.panel-body
 		color: #000000
 		text-align: left
 .ugahacks-panel
-	border: none
 	.panel-heading
-		background-image: none
-		background-color: #EE3031
-		border: none
+		background-color: $main-color
+
 #contact
 	margin-bottom: 100px
 #reg-container

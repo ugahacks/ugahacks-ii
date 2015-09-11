@@ -1,37 +1,21 @@
-/*
-  =require twitter-bootstrap-static/bootstrap
-
-  Use Font Awesome icons (default)
-  To use Glyphicons sprites instead of Font Awesome, replace with ""
-  require twitter-bootstrap-static/sprites
-  */
-body {
-	background-color: #1a1a1a;
-}
-  .navbar {
-    background-color: #000000;
-    border:none;
+body{
+  background-color: #1A1A1A;
+  color: #fff;
 }
 
-
-.btn-danger {
-	background-color:#EE3031;
+.navbar{
+  border: none;
+  background-color: #000000;
 }
 
-.btn {
-	background-color: #EE3031;
+.btn-danger{
+  background-color: #EE3031;
 }
 
-.panel {
-	border: none;
+.btn{
+  background-color: #EE3031;
 }
 
-@font-face {
-    font-family: gotham book;
-    src: url("assets/fonts/copyfonts.com_gotham_book.ttf");
-}
-
-@font-face {
-	font-family: gotham bold;
-	src: url("assets/fonts/copyfonts.com_gotham_bold.ttf")
+.panel{
+  border: none;
 }

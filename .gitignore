@@ -103,5 +103,6 @@ Z-notes.rb
 /vendor/assets/bower_components/
 
 /public/assets/
-/log/
+/log/development.log
 /node_modules/*
+log/production.log

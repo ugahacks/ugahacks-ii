@@ -8,6 +8,7 @@
 //= require bootstrap/dist/js/bootstrap.js
 
 $(document).ready(function() {
+
   // animates elements to scroll into view when viewport shifts
   window.sr = new scrollReveal();
 
@@ -27,12 +28,12 @@ $(document).ready(function() {
     });
   });
 
+  // redirects to typeform directly if on mobile
   window.isMobile = /iphone|ipod|ipad|android|blackberry|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec/i.test(navigator.userAgent.toLowerCase());
   if (window.isMobile) {
     document.querySelector(".spotlight a").href = "https://jaicob.typeform.com/to/rXE0ra";
     document.querySelector("a[href='#register']").href = "https://jaicob.typeform.com/to/rXE0ra"
     document.querySelector("#register").style.display = "none";
   };
-
 
 });
