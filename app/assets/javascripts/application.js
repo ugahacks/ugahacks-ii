@@ -9,6 +9,18 @@
 
 $(document).ready(function() {
 
+  // indicate active section in navbar
+  $(window).scroll(function () {
+        var y = $(this).scrollTop();
+
+        $('nav li a').each(function (event) {
+            if (y >= $($(this).attr('href')).offset().top - 100) {
+                $('nav li a').not(this).removeClass('active');
+                $(this).addClass('active');
+            }
+        });
+    });
+
   // animates elements to scroll into view when viewport shifts
   window.sr = new scrollReveal();
 
@@ -21,7 +33,7 @@ $(document).ready(function() {
         if (target.length) {
           $('html,body').animate({
             scrollTop: target.offset().top - 50
-          }, 1000);
+          }, 1500);
           return false;
         }
       }

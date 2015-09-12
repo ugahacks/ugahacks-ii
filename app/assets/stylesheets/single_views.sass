@@ -2,33 +2,57 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$main-color: #EE3031
-$accent-color: #1a1a1a
-$white: #ffffff
+@import 'colors'
+@import 'fonts'
 
 .sponsor-row
 	margin-bottom: 15px
 
 *:not(.red-text)
-	color: white
+	color: $white
+	overflow-x: hidden
 
 .red-text
 	color: $main-color
+
+// make navbar centered
+@media (min-width: 768px)
+	.navbar-nav
+		float: none !important
+		margin: 0 auto !important
+		display: table !important
+		table-layout: fixed !important
+
+// correct navbar link colors
+.nav li a
+	color: black
+	margin: 2px 0 2px 0
+	border-radius: 1px
+	&:focus, &:hover, &.active
+		background: $main-color !important
+		color: $white
+
+// hide navbar on mobile
+.navbar
+	@include breakpoint('xs')
+		display: none
+	background: #F6F7F7
+	font-weight: bold
+	font-family: "Gotham Medium"
+	box-shadow: 0px 0px 5px 0px #888
 
 body
 	background-color: $accent-color
 	background-image: asset-url("bg.png")
 	transition: background 1s ease
-	#main-content
+	.main-content
 		padding-top: 50px
 		margin-top: 50px
 		text-align: center
 		.spotlight
 			height: 100vh
 		font-family: "Gotham Book"
-		h1,
-		h2,
-		h3
+		h1, h2, h3
 			font-family: "Gotham Medium"
 		h2
 			margin-top: 3px
@@ -68,9 +92,7 @@ section
 	.about-footer
 		font-size: 12px
 		margin-left: 475px
-#schedule
-	padding-top: 250px
-	margin-bottom: 100px
+#schdule
 .panel
 	margin-left: auto
 	margin-right: auto
@@ -94,7 +116,7 @@ section
 	width: 100%
 	align-content: center
 #register-fade
-	background: linear-gradient (transparent, white)
+	background-image: linear-gradient(to bottom, transparent, white)
 	height: 500px
 	margin-top: -250px
 #register
