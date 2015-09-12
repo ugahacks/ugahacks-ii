@@ -15,11 +15,6 @@ $white: #ffffff
 .red-text
 	color: $main-color
 
-.navbar-black
-	background-color: #000000
-	li
-		text-decoration: none
-
 body
 	background-color: $accent-color
 	background-image: asset-url("bg.png")
@@ -47,9 +42,8 @@ body
 		padding-top: -50px
 		padding-bottom: -50px
 section
-	padding: 50px 0 100px 0
-	&.row
-		min-height: 300px
+	padding: 100px 0 100px 0
+	min-height: 100vh
 	.header
 		text-size: 1.5em
 		font-family: Helvetica
@@ -68,25 +62,7 @@ section
 .progress-bar-ugahacks
 	background-image: none
 	background-color: $main-color
-#arrow-d
-	margin-top: 25px
-	width: 36px
-	margin-left: auto
-	margin-right: auto
-#arrow
-	width: 75px
-	position: relative
-	margin-left: auto
-	margin-right: auto
-#up-arrow
-	width: 75px
-	position: relative
-	bottom: 40px
-	margin-left: auto
-	margin-right: auto
 #about
-	padding-left: 75px
-	padding-right: 75px
 	p
 		font-size: 16px
 	.about-footer
@@ -99,19 +75,16 @@ section
 	margin-left: auto
 	margin-right: auto
 	height: 200px
-	border: none
+	border: 0 !important
 	.panel-heading
-		background-image: none
 		background-color: $main-color
 		.panel-title
-		font-family: "Gotham Bold"
+			font-family: "Gotham Bold"
+			padding: 15px
 			color: $white
 	.panel-body
 		color: #000000
 		text-align: left
-.ugahacks-panel
-	.panel-heading
-		background-color: $main-color
 
 #contact
 	margin-bottom: 100px
@@ -120,6 +93,10 @@ section
 	background-color: white
 	width: 100%
 	align-content: center
+#register-fade
+	background: linear-gradient (transparent, white)
+	height: 500px
+	margin-top: -250px
 #register
 	text-align: center
 	background: white
@@ -135,4 +112,4 @@ section
 		border: 0
 		display: block
 		width: 100%
-		height: 500px
+		height: 100vh

@@ -34,6 +34,10 @@ $(document).ready(function() {
     document.querySelector(".spotlight a").href = "https://jaicob.typeform.com/to/rXE0ra";
     document.querySelector("a[href='#register']").href = "https://jaicob.typeform.com/to/rXE0ra"
     document.querySelector("#register").style.display = "none";
+
+    document.querySelector(".jumbotron h2").innerText = "University of Georgia";
+
+    document.querySelector("#mlh-trust-badge").style.display = "none";
   };
 
 });
