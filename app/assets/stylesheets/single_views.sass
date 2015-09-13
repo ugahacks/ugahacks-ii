@@ -4,7 +4,7 @@
 
 @import 'colors'
 @import 'fonts'
-@import 'breakpoints'
+@import 'mixins/breakpoints'
 
 .sponsor-row
 	margin-bottom: 15px
@@ -34,7 +34,7 @@
 
 // hide navbar on mobile
 .navbar
-	@include breakpoint('xs')
+	@include breakpoint($xs)
 		display: none
 	background: #F6F7F7
 	font-weight: bold
@@ -75,6 +75,8 @@ section
 		margin-bottom: 20px
 .jumbotron.spotlight
 	background: transparent
+	h1, h2, h3
+		font-size: 3.8em
 #red-btn
 	margin-top: 25px
 	background-color: $main-color

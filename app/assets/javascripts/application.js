@@ -1,10 +1,7 @@
 //= require jquery
-//= require jquery_ujs
-//= require twitter/bootstrap
 //= require turbolinks
 //= require_tree .
 //= require scrollReveal.js/dist/scrollReveal.min.js
-//= require fakeloader/fakeLoader.min.js
 //= require bootstrap/dist/js/bootstrap.js
 
 $(document).ready(function() {
@@ -45,6 +42,7 @@ $(document).ready(function() {
   if (window.isMobile) {
     document.querySelector(".spotlight a").href = "https://jaicob.typeform.com/to/rXE0ra";
     document.querySelector("a[href='#register']").href = "https://jaicob.typeform.com/to/rXE0ra"
+    document.querySelector("#register-fade").style.display = "none";
     document.querySelector("#register").style.display = "none";
 
     document.querySelector(".jumbotron h2").innerText = "University of Georgia";

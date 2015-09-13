@@ -154,12 +154,15 @@
 			</div>
 		</section>
 	</div>
-	<div id="register-fade"></div>
-	<div class="container" id="reg-container" data-sr="wait .25s over 1s" data-background="#FFFFFF">
-		<section id="register" class="row">
-			<div class="col-md-12 text-center" id="inside" data-sr="wait 1s">
-				<iframe src="<%= @typeform_url %>" scrolling="no"></iframe>
-			</div>
-			<a href="#main-content"><span class="glyphicon glyphicon-menu-up" id="arrow" aria-hidden="true" style="color: #000000;"></span></a>
-		</section>
-	</div></body>
+	<div data-sr="wait .25s over 0.5s">
+		<div id="register-fade"></div>
+		<div class="container" id="reg-container" data-background="#FFFFFF">
+			<section id="register" class="row">
+				<div class="col-md-12 text-center" id="inside" data-sr="wait 1s">
+					<iframe src="<%= @typeform_url %>" scrolling="no"></iframe>
+				</div>
+				<a href="#main-content"><span class="glyphicon glyphicon-menu-up" id="arrow" aria-hidden="true" style="color: #000000;"></span></a>
+			</section>
+		</div>
+	</div>
+</body>
