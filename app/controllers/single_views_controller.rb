@@ -3,7 +3,7 @@ require 'gibbon'
 class SingleViewsController < ApplicationController
 
   def home
-  	@typeform_url = "https://jaicob.typeform.com/to/rXE0ra"
+  	@typeform_url = "https://ugahacks.typeform.com/to/rXE0ra"
   end
 
 end

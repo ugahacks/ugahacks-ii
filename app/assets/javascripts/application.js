@@ -149,7 +149,7 @@ $(document).ready(function() {
   } else {
     // registration
     callToActionText = "Register";
-    callToActionLink = isMobile ? "https://jaicob.typeform.com/to/rXE0ra" : "#register";
+    callToActionLink = isMobile ? "https://ugahacks.typeform.com/to/rXE0ra" : "#register";
   };
 
   $("li a[href='#register'], a[href='#register'] *").text(callToActionText);
