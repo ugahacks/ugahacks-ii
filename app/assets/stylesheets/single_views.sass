@@ -4,7 +4,8 @@
 
 @import 'colors'
 @import 'fonts'
-@import 'mixins/breakpoints'
+@import 'mixins/*'
+@import 'bourbon/app/assets/stylesheets/bourbon'
 
 .sponsor-row
 	margin-bottom: 15px
@@ -60,15 +61,13 @@ body
 
 #logo
 	margin: auto
+	padding: 20px
 .spotlight
 	h1, h2
 		font-family: "Gotham Bold"
-	h1
-		padding-top: -50px
-		padding-bottom: -50px
 section
 	padding: 100px 0 100px 0
-	min-height: 100vh
+	min-height: calc(100vh - 200px)
 	.header
 		text-size: 1.5em
 		font-family: Helvetica
@@ -80,22 +79,34 @@ section
 #red-btn
 	margin-top: 25px
 	background-color: $main-color
-#red-btn:hover
-	color: $white
-	cursor: auto
-.progress-bar
-	background-image: none
-	background-color: $main-color
-.progress-bar-ugahacks
-	background-image: none
-	background-color: $main-color
+	&:hover
+		color: $white
+		cursor: auto
 #about
+	padding: 10px
+	.col:not(:first-child,:last-child)
+		padding-right: 7px
+		padding-left: 7px
 	p
 		font-size: 16px
-	.about-footer
-		font-size: 12px
-		margin-left: 475px
-#schdule
+		padding: 0 20px 0 20px
+	#timeline
+		margin-top: 100px
+		.timeline-item
+			position: relative
+			margin: 20px
+			min-height: 100px
+			@include breakpoint($md)
+				@include aspect-ratio(1, 1)
+				width: calc(25% - 40px)
+				border-radius: 50%
+			background: $main-color
+			p
+				@include centered
+				display: table
+				width: 100%
+				text-align: center
+#schedule
 .panel
 	margin-left: auto
 	margin-right: auto
@@ -110,7 +121,6 @@ section
 	.panel-body
 		color: #000000
 		text-align: left
-
 #contact
 	margin-bottom: 100px
 #reg-container
@@ -118,6 +128,11 @@ section
 	background-color: white
 	width: 100%
 	align-content: center
+#partners
+	img.partner
+		background: $white
+		padding: 20px
+		border-radius: 10px
 #register-fade
 	background-image: linear-gradient(to bottom, transparent, white)
 	height: 500px

@@ -29,7 +29,7 @@ $(document).ready(function() {
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
           $('html,body').animate({
-            scrollTop: target.offset().top - 50
+            scrollTop: target.offset().top - 100
           }, 1500);
           return false;
         }
@@ -40,14 +40,13 @@ $(document).ready(function() {
   // redirects to typeform directly if on mobile
   window.isMobile = /iphone|ipod|ipad|android|blackberry|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec/i.test(navigator.userAgent.toLowerCase());
   if (window.isMobile) {
-    document.querySelector(".spotlight a").href = "https://jaicob.typeform.com/to/rXE0ra";
-    document.querySelector("a[href='#register']").href = "https://jaicob.typeform.com/to/rXE0ra"
-    document.querySelector("#register-fade").style.display = "none";
-    document.querySelector("#register").style.display = "none";
+    $(".spotlight a").attr("href", "https://jaicob.typeform.com/to/rXE0ra");
+    $("a[href='#register']").attr("href", "https://jaicob.typeform.com/to/rXE0ra");
+    $("#register-fade").hide()
+    $("#register").hide()
+    $(".jumbotron h2").text ("University of Georgia");
 
-    document.querySelector(".jumbotron h2").innerText = "University of Georgia";
-
-    document.querySelector("#mlh-trust-badge").style.display = "none";
+    $("#mlh-trust-badge").css("display", "none");
   };
 
 });
