@@ -15,8 +15,8 @@
 		<section class="row" data-sr id="about-info">
 			<div class="col-md-12">
 				<h2 class="header">This one is for all the <span class="red-text">dreamers</span>. All the <span class="red-text">movers</span>. All the <span class="red-text">creators</span>.</h2>
-				<p data-sr>We're calling hackers and innovators of all kinds – designers, coders, engineers, developers, modern athletes, gods, etc. – to come with an idea, with a passion, and with a drive to emerge from beneath the surface and create something out of nothing. So here's to you, the digital artist about to take another step, or perhaps your first step, to joining our global community of creators.</p>
-				<p data-sr>Make an impact and Happy Hacking!</p>
+				<p >We're calling hackers and innovators of all kinds – <span class="red-text">designers, coders, engineers, developers, modern athletes, gods, etc.</span> – to come with an idea, with a passion, and with a drive to emerge from beneath the surface and create something out of nothing. No matter what your skill level, experience, specialty, or preference may indicate, anyone and everyone is welcome to come and <span class="red-text">learn</span>, <span class="red-text">create</span>, and <span class="red-text">share</span>.</p><p>This isn't just a competition; this is a <span class="red-text">celebration</span>. It's a glorious homage to everything you, <span class="red-text">the hacker</span>, do to make something awesome and our community so incredible. So here's to you, the digital artist about to take another step – <span class="red-text">or perhaps the first step</span> – to being a part our global community of creators.</p>
+			<p>Make an impact and <span class="red-text">Happy Hacking</span>!</p>
 			</div>
 			<div class="col-md-10 col-md-offset-1" id="timeline">
 				 	<div class="col-md-3 timeline-item">
@@ -171,7 +171,13 @@
 				<div class="col-md-12 text-center" id="inside" data-sr="wait 1s">
 					<iframe src="<%= @typeform_url %>" scrolling="no"></iframe>
 				</div>
-				<a href="#main-content"><span class="glyphicon glyphicon-menu-up" id="arrow" aria-hidden="true" style="color: #000000;"></span></a>
+				<a href="#about">
+					<%= image_tag("up-arrow.png",
+						class: "img-responsive",
+						alt: "transition arrow",
+						id: "arrow")
+					%>
+				</a>
 			</section>
 		</div>
 	</div>
