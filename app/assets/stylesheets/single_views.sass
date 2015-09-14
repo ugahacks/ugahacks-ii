@@ -2,117 +2,125 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$main-color: #EE3031
-$accent-color: #1a1a1a
-$white: #ffffff
+@import 'colors'
+@import 'fonts'
+@import 'mixins/*'
+@import 'bourbon/app/assets/stylesheets/bourbon'
 
 .sponsor-row
 	margin-bottom: 15px
 
 *:not(.red-text)
-	color: white
+	color: $white
 
 .red-text
 	color: $main-color
 
-.navbar-black
-	background-color: #000000
-	li
-		text-decoration: none
+// make navbar centered
+@media (min-width: 768px)
+	.navbar-nav
+		float: none !important
+		margin: 0 auto !important
+		display: table !important
+		table-layout: fixed !important
+
+// correct navbar link colors
+.nav li a
+	color: black
+	margin: 2px 0 2px 0
+	border-radius: 1px
+	&:focus, &:hover, &.active
+		background: $main-color !important
+		color: $white
+
+// hide navbar on mobile
+.navbar
+	@include breakpoint($xs)
+		display: none
+	background: #F6F7F7
+	font-weight: bold
+	font-family: "Gotham Medium"
+	box-shadow: 0px 0px 5px 0px #888
 
 body
+	overflow-x: hidden
 	background-color: $accent-color
 	background-image: asset-url("bg.png")
 	transition: background 1s ease
-	#main-content
+	.main-content
 		padding-top: 50px
 		margin-top: 50px
 		text-align: center
 		.spotlight
 			height: 100vh
 		font-family: "Gotham Book"
-		h1,
-		h2,
-		h3
+		h1, h2, h3
 			font-family: "Gotham Medium"
 		h2
 			margin-top: 3px
 
 #logo
 	margin: auto
+	padding: 20px
 .spotlight
 	h1, h2
 		font-family: "Gotham Bold"
-	h1
-		padding-top: -50px
-		padding-bottom: -50px
 section
-	padding: 50px 0 100px 0
-	&.row
-		min-height: 300px
+	padding: 100px 0 100px 0
+	min-height: calc(100vh - 200px)
 	.header
 		text-size: 1.5em
 		font-family: Helvetica
 		margin-bottom: 20px
 .jumbotron.spotlight
 	background: transparent
+	h1, h2, h3
+		font-size: 3.8em
 #red-btn
 	margin-top: 25px
 	background-color: $main-color
-#red-btn:hover
-	color: $white
-	cursor: auto
-.progress-bar
-	background-image: none
-	background-color: $main-color
-.progress-bar-ugahacks
-	background-image: none
-	background-color: $main-color
-#arrow-d
-	margin-top: 25px
-	width: 36px
-	margin-left: auto
-	margin-right: auto
-#arrow
-	width: 75px
-	position: relative
-	margin-left: auto
-	margin-right: auto
-#up-arrow
-	width: 75px
-	position: relative
-	bottom: 40px
-	margin-left: auto
-	margin-right: auto
+	&:hover
+		color: $white
+		cursor: auto
 #about
-	padding-left: 75px
-	padding-right: 75px
+	padding: 10px
+	.col:not(:first-child,:last-child)
+		padding-right: 7px
+		padding-left: 7px
 	p
 		font-size: 16px
-	.about-footer
-		font-size: 12px
-		margin-left: 475px
+		padding: 0 20px 0 20px
+	#timeline
+		margin-top: 100px
+		.timeline-item
+			position: relative
+			margin: 20px
+			min-height: 100px
+			@include breakpoint($md)
+				@include aspect-ratio(1, 1)
+				width: calc(25% - 40px)
+				border-radius: 50%
+			background: $main-color
+			p
+				@include centered
+				display: table
+				width: 100%
+				text-align: center
 #schedule
-	padding-top: 250px
-	margin-bottom: 100px
 .panel
 	margin-left: auto
 	margin-right: auto
 	height: 200px
-	border: none
+	border: 0 !important
 	.panel-heading
-		background-image: none
 		background-color: $main-color
 		.panel-title
-		font-family: "Gotham Bold"
+			font-family: "Gotham Bold"
+			padding: 15px
 			color: $white
 	.panel-body
 		color: #000000
 		text-align: left
-.ugahacks-panel
-	.panel-heading
-		background-color: $main-color
-
 #contact
 	margin-bottom: 100px
 #reg-container
@@ -120,6 +128,15 @@ section
 	background-color: white
 	width: 100%
 	align-content: center
+#partners
+	img.partner
+		background: $white
+		padding: 20px
+		border-radius: 10px
+#register-fade
+	background-image: linear-gradient(to bottom, transparent, white)
+	height: 500px
+	margin-top: -250px
 #register
 	text-align: center
 	background: white
@@ -135,4 +152,4 @@ section
 		border: 0
 		display: block
 		width: 100%
-		height: 500px
+		height: 100vh

@@ -2,8 +2,8 @@
   "name": "dsl-generated dependencies",
   "dependencies": {
     "scrollReveal.js": "2.3.2",
-    "fakeloader": "https://github.com/joaopereirawd/fakeLoader.js.git#6daaa01b3c7dc6a462ec4dfc8d782affd0b1ff84",
-    "bootstrap": "3.3.5"
+    "bootstrap": "3.3.5",
+    "bourbon": "4.2.4"
   },
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install"
