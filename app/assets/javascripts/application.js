@@ -4,6 +4,7 @@
 //= require bootstrap/dist/js/bootstrap.js
 //= require moment
 //= require sweetalert
+//= require waypoints
 //= require_tree .
 
 $(document).ready(function() {
@@ -83,6 +84,8 @@ $(document).ready(function() {
     index++;
   })
 
+  window.initTimelineAnimation = initTimelineAnimation;
+
   function initTimelineAnimation (index) {
     var index = index || 0;
     var milestone = timelineMilestones[index];
@@ -122,6 +125,13 @@ $(document).ready(function() {
   if (isMobile) {
     hideRegistration();
     $("#mlh-trust-badge").remove();
+
+    var waypoint = new Waypoint({
+      element: document.querySelector("#about-info"),
+      handler: function(direction) {
+        initTimelineAnimation();
+      }
+    })
   };
 
   var closingTime = timelineMilestones.filter(function (milestone) {
