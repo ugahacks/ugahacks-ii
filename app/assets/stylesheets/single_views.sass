@@ -61,6 +61,7 @@ body
 
 #logo
 	margin: auto
+	margin-top: 50px
 	padding: 20px
 .spotlight
 	h1, h2
@@ -84,9 +85,6 @@ section
 		cursor: auto
 #about
 	padding: 10px
-	.col:not(:first-child,:last-child)
-		padding-right: 7px
-		padding-left: 7px
 	p
 		font-size: 16px
 		padding: 0 20px 0 20px
@@ -96,6 +94,7 @@ section
 			position: relative
 			margin: 20px
 			min-height: 100px
+			padding: 60px
 			@include breakpoint($md)
 				@include aspect-ratio(1, 1)
 				width: calc(25% - 40px)
@@ -117,6 +116,7 @@ section
 				display: table
 				width: 100%
 				text-align: center
+				padding: 20px
 #schedule
 .panel
 	margin-left: auto
