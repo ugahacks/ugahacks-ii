@@ -99,8 +99,19 @@ section
 			@include breakpoint($md)
 				@include aspect-ratio(1, 1)
 				width: calc(25% - 40px)
-				border-radius: 50%
-			background: $main-color
+				border-radius: 5px
+				border: 5px solid $white
+			.progress-fill
+				background: $main-color
+				position: absolute
+				top: 0
+				bottom: 0
+				z-index: -999
+				left: 0%
+				right: 100%
+				&.active
+					@include transition(all 1.0s linear)
+					right: 0
 			p
 				@include centered
 				display: table
