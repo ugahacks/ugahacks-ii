@@ -60,9 +60,11 @@ body
 			margin-top: 3px
 
 #logo
-	margin: auto
-	margin-top: 50px
 	padding: 20px
+	margin-top: -60px
+	@include breakpoint($sm)
+		margin: auto
+		margin-top: 50px
 .spotlight
 	h1, h2
 		font-family: "Gotham Bold"
@@ -76,7 +78,7 @@ section
 .jumbotron.spotlight
 	background: transparent
 	h1, h2, h3
-		font-size: 3.8em
+		font-size: 3.5em
 #red-btn
 	margin-top: 25px
 	background-color: $main-color
