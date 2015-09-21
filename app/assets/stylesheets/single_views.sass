@@ -4,13 +4,14 @@
 
 @import 'colors'
 @import 'fonts'
+@import 'mixins/*'
+@import 'bourbon/app/assets/stylesheets/bourbon'
 
 .sponsor-row
 	margin-bottom: 15px
 
 *:not(.red-text)
 	color: $white
-	overflow-x: hidden
 
 .red-text
 	color: $main-color
@@ -34,14 +35,14 @@
 
 // hide navbar on mobile
 .navbar
-	@include breakpoint('xs')
+	@include breakpoint($xs)
 		display: none
 	background: #F6F7F7
-	font-weight: bold
 	font-family: "Gotham Medium"
 	box-shadow: 0px 0px 5px 0px #888
 
 body
+	overflow-x: hidden
 	background-color: $accent-color
 	background-image: asset-url("bg.png")
 	transition: background 1s ease
@@ -59,40 +60,63 @@ body
 
 #logo
 	margin: auto
+	padding: 20px
 .spotlight
 	h1, h2
 		font-family: "Gotham Bold"
-	h1
-		padding-top: -50px
-		padding-bottom: -50px
 section
 	padding: 100px 0 100px 0
-	min-height: 100vh
+	min-height: calc(100vh - 200px)
 	.header
 		text-size: 1.5em
 		font-family: Helvetica
 		margin-bottom: 20px
 .jumbotron.spotlight
 	background: transparent
+	h1, h2, h3
+		font-size: 3.8em
 #red-btn
 	margin-top: 25px
 	background-color: $main-color
-#red-btn:hover
-	color: $white
-	cursor: auto
-.progress-bar
-	background-image: none
-	background-color: $main-color
-.progress-bar-ugahacks
-	background-image: none
-	background-color: $main-color
+	&:hover
+		color: $white
+		cursor: auto
 #about
+	padding: 10px
+	.col:not(:first-child,:last-child)
+		padding-right: 7px
+		padding-left: 7px
 	p
 		font-size: 16px
-	.about-footer
-		font-size: 12px
-		margin-left: 475px
-#schdule
+		padding: 0 20px 0 20px
+	#timeline
+		margin-top: 100px
+		.timeline-item
+			position: relative
+			margin: 20px
+			min-height: 100px
+			@include breakpoint($md)
+				@include aspect-ratio(1, 1)
+				width: calc(25% - 40px)
+				border-radius: 5px
+				border: 5px solid $white
+			.progress-fill
+				background: $main-color
+				position: absolute
+				top: 0
+				bottom: 0
+				z-index: -999
+				left: 0%
+				right: 100%
+				&.active
+					@include transition(all 1.0s linear)
+					right: 0
+			p
+				@include centered
+				display: table
+				width: 100%
+				text-align: center
+#schedule
 .panel
 	margin-left: auto
 	margin-right: auto
@@ -107,7 +131,6 @@ section
 	.panel-body
 		color: #000000
 		text-align: left
-
 #contact
 	margin-bottom: 100px
 #reg-container
@@ -115,6 +138,15 @@ section
 	background-color: white
 	width: 100%
 	align-content: center
+	#arrow
+		margin-left: auto
+		margin-right: auto
+		width: 5%
+#partners
+	img.partner
+		background: $white
+		padding: 20px
+		border-radius: 10px
 #register-fade
 	background-image: linear-gradient(to bottom, transparent, white)
 	height: 500px
@@ -129,6 +161,7 @@ section
 	border-radius: 10px
 	margin-right: auto
 	margin-left: auto
+	margin-bottom: 10px
 	width: 100%
 	iframe
 		border: 0

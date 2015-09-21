@@ -1,6 +1,6 @@
 <body>
 	<div id="about" class="main-content" class="container">
-		<div class="row text-center" data-sr="wait .66">
+		<div class="text-center" data-sr="wait .66">
 			<%= image_tag("logo.png",
 			class: "img-responsive",
 			alt: "ugahacks logo",
@@ -8,22 +8,33 @@
 			) %>
 		</div>
 		<div class="jumbotron spotlight">
-			<h1 data-sr="wait 1.32s">OCTOBER 23RD<span style="padding-left: 4px; padding-right: 4px;">-</span>25TH</h1>
-			<h2 data-sr="wait 1.98s">UNIVERSITY OF GEORGIA, ATHENS, GA</h2>
-			<a href="#register" data-sr="wait 2.74s"><div class="btn btn-lg" id="red-btn">Register</div></a><br/>
+			<h1 data-sr="wait 1.2s">OCTOBER 23RD<span style="padding-left: 4px; padding-right: 4px;">-</span>25TH</h1>
+			<h2 data-sr="wait 1.7s">UNIVERSITY OF GEORGIA</h2>
+			<a href="#register" data-sr="wait 2.2s"><div class="btn btn-lg" id="red-btn">Register</div></a><br/>
 		</div>
-		<section class="row" data-sr>
+		<section class="row" data-sr id="about-info">
 			<div class="col-md-12">
-				<h2 class="header">This one is for all the <span class="red-text">dreamers</span>. All the <span class="red-text">movers</span>. All the <span class="red-text">creators</span>.<br/>Welcome to the <span class="red-text">University of Georgia</span>'s inaugural hackathon.</h2>
-				<p data-sr="wait .75s">We're calling hackers and innovators of all kinds – designers, coders, engineers, developers, modern athletes, gods, etc. – to come with an idea, with a passion, and with a drive to emerge from beneath the surface and create something out of nothing. So here's to you, the digital artist about to take another step, or perhaps your first step, to joining our global community of creators.</p>
-				<p data-sr="wait 1.5s">Make an impact and Happy Hacking</p>
+				<h2 class="header">This one is for all the <span class="red-text">dreamers</span>. All the <span class="red-text">movers</span>. All the <span class="red-text">creators</span>.</h2>
+				<p >We're calling hackers and innovators of all kinds – designers, coders, engineers, developers, modern athletes, gods, etc. – to come with an idea, with a passion, and with a drive to emerge from beneath the surface and create something out of nothing. No matter what your skill level, experience, specialty, or preference may indicate, anyone and everyone is welcome to come and learn, create, and share.</p><p>This isn't just a competition; this is a celebration. It's a glorious homage to everything you, the hacker, do to make something awesome and our community so incredible. So here's to you, the digital artist about to take another step – or perhaps the first step – to being a part our global community of creators.</p>
+			<p>Make an impact and <span class="red-text">Happy Hacking</span>!</p>
 			</div>
-			<div class="col-md-12" id="timeline" data-sr="wait 2.25s">
-				<div class="progress">
-					<div class="progress-bar-ugahacks" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width: 33%">
-						<span>Applications released!</span>
-					</div>
-				</div>
+			<div class="col-md-10 col-md-offset-1" id="timeline">
+				 	<div class="col-md-3 timeline-item">
+					 	<div class="progress-fill"></div>
+					 	<p></p>
+				 	</div>
+				 	<div class="col-md-3 timeline-item">
+					 	<div class="progress-fill"></div>
+					 	<p></p>
+				 	</div>
+				 	<div class="col-md-3 timeline-item">
+					 	<div class="progress-fill"></div>
+					 	<p></p>
+				 	</div>
+				 	<div class="col-md-3 timeline-item">
+					 	<div class="progress-fill"></div>
+					 	<p></p>
+				 	</div>
 			</div>
 		</section>
 		<section id="schedule" class="row" data-sr>
@@ -125,8 +136,7 @@
 		<section id="sponsors" class="row" data-sr>
 			<div class="col-md-12">
 				<h2 class="header">The <span class="red-text">sponsors</span> making our event possible.</h2>
-				<h4><a href="mailto:sponsor@ugahacks.com">Interested in Becoming a sponsor?</a></h4>
-				<h1> We have serveral great sponsors that we are excited to announce soon! </h1>
+				We have several great sponsors that we are excited to announce soon! Interested in Becoming a sponsor? Shoot us an email: <a href="mailto:sponsor@ugahacks.com" class="red-text">sponsor@ugahacks.com</a>
 			</div>
 		</section>
 		<section id="partners" class="row" data-sr>
@@ -136,12 +146,21 @@
 					<div class="col-md-4 col-md-offset-4">
 						<div class="row sponsor-row">
 							<div class="col-md-12">
-								<%= image_tag("mlh-logo.png", class:"img-responsive") %>
+								<%= image_tag("mlh-logo.png", class:"img-responsive partner") %>
 							</div>
 						</div>
 					</div>
 				</div>
 				<br>
+				<div class="row">
+					<div class="col-md-3 col-md-offset-4">
+						<div class="row sponsor-row">
+							<div class="col-md-12">
+								<%= image_tag("ugaacm.png", class:"img-responsive") %>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="row">
 					<div class="col-md-3 col-md-offset-4">
 						<div class="row sponsor-row">
@@ -154,12 +173,21 @@
 			</div>
 		</section>
 	</div>
-	<div id="register-fade"></div>
-	<div class="container" id="reg-container" data-sr="wait .25s over 1s" data-background="#FFFFFF">
-		<section id="register" class="row">
-			<div class="col-md-12 text-center" id="inside" data-sr="wait 1s">
-				<iframe src="<%= @typeform_url %>" scrolling="no"></iframe>
-			</div>
-			<a href="#main-content"><span class="glyphicon glyphicon-menu-up" id="arrow" aria-hidden="true" style="color: #000000;"></span></a>
-		</section>
-	</div></body>
+	<div data-sr="over 0.5s">
+		<div id="register-fade"></div>
+		<div class="container" id="reg-container" data-background="#FFFFFF">
+			<section id="register" class="row">
+				<div class="col-md-12 text-center" id="inside" data-sr="wait 1s">
+					<iframe src="<%= @typeform_url %>" scrolling="no"></iframe>
+				</div>
+				<a href="#about">
+					<%= image_tag("up-arrow.png",
+						class: "img-responsive",
+						alt: "transition arrow",
+						id: "arrow")
+					%>
+				</a>
+			</section>
+		</div>
+	</div>
+</body>
