@@ -9,7 +9,7 @@
 
 $(document).ready(function() {
 
-  var VOLUNTEER_LINK = "";
+  var VOLUNTEER_LINK = "https://ugahacks.typeform.com/to/NEDjqb";
 
   // indicate active section in navbar
   $(window).scroll(function () {
@@ -31,7 +31,7 @@ $(document).ready(function() {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
         if (target.length) {
-          $('html,body').animate({
+          $('html, body').animate({
             scrollTop: target.offset().top - 100
           }, 1500);
           return false;
@@ -138,9 +138,11 @@ $(document).ready(function() {
     return milestone.name == "Applications Close"
   })[0].time;
   var applicationsClosed = closingTime.isBefore(now, 'd')
+  var volunteerApplicationOpen = now.isAfter(moment("September 28, 2015")) && now.isBefore(moment("October 14, 2015"))
 
   var callToActionText, callToActionLink;
 
+  $("#volunteer-button").hide();
   if (applicationsClosed) {
     // volunteering
     callToActionText = "Volunteer";
@@ -150,6 +152,12 @@ $(document).ready(function() {
     // registration
     callToActionText = "Register";
     callToActionLink = isMobile ? "https://ugahacks.typeform.com/to/rXE0ra" : "#register";
+  };
+
+  if (callToActionText != "Volunteer" && volunteerApplicationOpen) {
+    var button = $("#volunteer-button")
+    button.show();
+    button.attr("href", VOLUNTEER_LINK);
   };
 
   $("li a[href='#register'], a[href='#register'] *").text(callToActionText);
