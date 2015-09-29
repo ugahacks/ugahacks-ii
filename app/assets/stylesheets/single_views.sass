@@ -7,6 +7,11 @@
 @import 'mixins/*'
 @import 'bourbon/app/assets/stylesheets/bourbon'
 
+.top-buffer
+	margin-top: 20px
+.bottom-buffer
+	margin-bottom: 20px
+
 .sponsor-row
 	margin-bottom: 15px
 
@@ -146,16 +151,24 @@ section
 	background-color: white
 	width: 100%
 	align-content: center
-#partners
+#sponsors
+	img
+		margin-right: 20px
+		&.kilo
+			width: 200px
+			display: inline-block
+		&.mega
+			width: 300px
+			display: inline-block
+		&.giga
+			width: 500px
+			display: inline-block
+#sponsors, #partners
 	img
 		margin: auto
+		margin-bottom: 20px
 		@include breakpoint($xs)
 			max-width: 300px
-		@include breakpoint($sm)
-			max-width: 300px
-		&.partner
-			background: $white
-			padding: 20px
 #register-fade
 	background-image: linear-gradient(to bottom, transparent, white)
 	height: 500px
@@ -175,5 +188,8 @@ section
 		width: 100%
 		height: 100vh
 
-.mlh
+
+.light-background
 	border-radius: 4px
+	background: $white
+	padding: 20px
