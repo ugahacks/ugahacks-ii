@@ -7,6 +7,11 @@
 @import 'mixins/*'
 @import 'bourbon/app/assets/stylesheets/bourbon'
 
+.top-buffer
+	margin-top: 20px
+.bottom-buffer
+	margin-bottom: 20px
+
 .sponsor-row
 	margin-bottom: 15px
 
@@ -15,6 +20,12 @@
 
 .red-text
 	color: $main-color
+
+.panel, .panel-heading
+	border-radius: 0
+
+.panel-body
+	padding-bottom: 20px
 
 // make navbar centered
 @media (min-width: 768px)
@@ -28,7 +39,6 @@
 .nav li a
 	color: black
 	margin: 2px 0 2px 0
-	border-radius: 1px
 	&:focus, &:hover, &.active
 		background: $main-color !important
 		color: $white
@@ -59,14 +69,17 @@ body
 			margin-top: 3px
 
 #logo
-	margin: auto
 	padding: 20px
+	margin-top: -60px
+	@include breakpoint($sm)
+		margin: auto
+		margin-top: 50px
 .spotlight
 	h1, h2
 		font-family: "Gotham Bold"
 section
 	padding: 100px 0 100px 0
-	min-height: calc(100vh - 200px)
+	min-height: 100vh
 	.header
 		text-size: 1.5em
 		font-family: Helvetica
@@ -74,18 +87,18 @@ section
 .jumbotron.spotlight
 	background: transparent
 	h1, h2, h3
-		font-size: 3.8em
-#red-btn
+		font-size: 3.5em
+.horizontal
+	display: inline-block
+.red-btn
 	margin-top: 25px
 	background-color: $main-color
+	border-radius: 0
 	&:hover
 		color: $white
 		cursor: auto
 #about
 	padding: 10px
-	.col:not(:first-child,:last-child)
-		padding-right: 7px
-		padding-left: 7px
 	p
 		font-size: 16px
 		padding: 0 20px 0 20px
@@ -95,11 +108,11 @@ section
 			position: relative
 			margin: 20px
 			min-height: 100px
+			padding: 60px
+			border: 5px solid $white
 			@include breakpoint($md)
-				@include aspect-ratio(1, 1)
+				@include aspect-ratio(3, 1)
 				width: calc(25% - 40px)
-				border-radius: 5px
-				border: 5px solid $white
 			.progress-fill
 				background: $main-color
 				position: absolute
@@ -116,13 +129,14 @@ section
 				display: table
 				width: 100%
 				text-align: center
+				padding: 20px
 #schedule
 .panel
-	margin-left: auto
-	margin-right: auto
-	height: 200px
+	margin: auto
+	height: 250px
 	border: 0 !important
 	.panel-heading
+		margin-top: 20px
 		background-color: $main-color
 		.panel-title
 			font-family: "Gotham Bold"
@@ -138,19 +152,32 @@ section
 	background-color: white
 	width: 100%
 	align-content: center
-	#arrow
-		margin-left: auto
-		margin-right: auto
-		width: 5%
+#sponsors
+	img
+		margin-right: 20px
+		&.kilo
+			width: 200px
+			display: inline-block
+		&.mega
+			width: 300px
+			display: inline-block
+		&.giga
+			width: 500px
+			display: inline-block
 #partners
-	img.partner
-		background: $white
-		padding: 20px
-		border-radius: 10px
+	img
+		border-radius: 8px
+#sponsors, #partners
+	img
+		margin: 20px
+		@include breakpoint($xs)
+		max-width: 300px
+		&.flow
+			display: inline-block
+			width: 300px
 #register-fade
 	background-image: linear-gradient(to bottom, transparent, white)
 	height: 500px
-	margin-top: -250px
 #register
 	text-align: center
 	background: white
@@ -158,13 +185,17 @@ section
 	text-transform: uppercase
 	padding: 0
 	margin-top: 50px
-	border-radius: 10px
 	margin-right: auto
 	margin-left: auto
-	margin-bottom: 10px
 	width: 100%
 	iframe
 		border: 0
 		display: block
 		width: 100%
 		height: 100vh
+
+
+.light-background
+	border-radius: 4px
+	background: $white
+	padding: 20px

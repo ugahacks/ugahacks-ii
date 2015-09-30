@@ -3,23 +3,44 @@
 //= require scrollReveal.js/dist/scrollReveal.min.js
 //= require bootstrap/dist/js/bootstrap.js
 //= require moment
+//= require sweetalert
+//= require waypoints
 //= require_tree .
 
 $(document).ready(function() {
+
+  var VOLUNTEER_LINK = "https://ugahacks.typeform.com/to/NEDjqb";
 
   // indicate active section in navbar
   $(window).scroll(function () {
         var y = $(this).scrollTop();
 
         $('nav li a').each(function (event) {
-            if (y >= $($(this).attr('href')).offset().top - 100) {
+            if (y >= $($(this).attr('href')).offset().top - 150) {
                 $('nav li a').not(this).removeClass('active');
                 $(this).addClass('active');
             }
         });
     });
 
-  var timelineDates = [
+
+  // smoothly scroll when clicking on anchor links
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top - 100
+          }, 1500);
+          return false;
+        }
+      }
+    });
+  });
+
+  var timelineMilestones = [
     {
       time: "September 3, 2015",
       name:  "Applications Open"
@@ -36,10 +57,10 @@ $(document).ready(function() {
       time: "October 23, 2015",
       name:  "UGA Hacks Begins"
     }
-  ].map(function (timeline) {
+  ].map(function (milestone) {
     return {
-      time: moment(timeline.time),
-      name: timeline.name
+      time: moment(milestone.time),
+      name: milestone.name
     };
   });
 
@@ -48,75 +69,98 @@ $(document).ready(function() {
   var timelineItems = $(".col-md-3.timeline-item");
 
   var index = 0;
-  timelineDates.forEach(function (deadline) {
+  timelineMilestones.forEach(function (milestone) {
     var element = timelineItems[index];
     var content = "";
-    var deadlinePassed = !deadline.time.isAfter(now)
-    if (deadlinePassed) {
-      content = "✓<br><br>" + deadline.time.format("MMMM Do") + "<br>" + deadline.name;
+    var description = "<br><br>" + milestone.time.format("MMMM Do") + "<br>" + milestone.name;
+    var milestonePassed = milestone.time.isBefore(now, 'd')
+    if (milestonePassed) {
+      content = "✓" + description;
     } else {
-      content = "…<br><br>" + deadline.time.format("MMMM Do") + "<br>" + deadline.name;
+      content = "…" + description;
     }
 
     element.querySelector("p").innerHTML = content;
     index++;
   })
 
+  window.initTimelineAnimation = initTimelineAnimation;
+
   function initTimelineAnimation (index) {
-    var deadline = timelineDates[index]
+    var index = index || 0;
+    var milestone = timelineMilestones[index];
     var element = timelineItems[index];
     var content = "";
-    var deadlinePassed = !deadline.time.isAfter(now)
-    if (deadlinePassed) {
-      $(timelineItems[index]).find(".progress-fill").addClass("active")
+    var milestonePassed = milestone.time.isBefore(now);
+    if (milestonePassed) {
+      $(timelineItems[index]).find(".progress-fill").addClass("active");
     }
     index++;
 
-    if (index >= timelineDates.length) {
+    if (index >= timelineMilestones.length) {
       return;
     };
 
     setTimeout(function(){
       initTimelineAnimation(index);
-    }, 1000);
+    }, 1150);
   }
 
   // animates elements to scroll into view when viewport shifts
   var config = {
     complete: function( el ) {
       if (el.id == "about-info") {
-        initTimelineAnimation(0)
+        initTimelineAnimation()
       };
     }
   }
   window.sr = new scrollReveal(config);
 
-  // smoothly scroll when clicking on anchor links
-  $(function() {
-    $('a[href*=#]:not([href=#])').click(function() {
-      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        if (target.length) {
-          $('html,body').animate({
-            scrollTop: target.offset().top - 100
-          }, 1500);
-          return false;
-        }
-      }
-    });
-  });
+  var hideRegistration = function () {
+    $("#register-fade, #register").remove();
+  };
 
   // redirects to typeform directly if on mobile
-  window.isMobile = /iphone|ipod|ipad|android|blackberry|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec/i.test(navigator.userAgent.toLowerCase());
-  if (window.isMobile) {
-    $(".spotlight a").attr("href", "https://jaicob.typeform.com/to/rXE0ra");
-    $("a[href='#register']").attr("href", "https://jaicob.typeform.com/to/rXE0ra");
-    $("#register-fade").hide()
-    $("#register").hide()
-    $(".jumbotron h2").text ("University of Georgia");
+  isMobile = /iphone|ipod|ipad|android|blackberry|opera mini|opera mobi|skyfire|maemo|windows phone|palm|iemobile|symbian|symbianos|fennec/i.test(navigator.userAgent.toLowerCase());
+  if (isMobile) {
+    hideRegistration();
+    $("#mlh-trust-badge").remove();
 
-    $("#mlh-trust-badge").css("display", "none");
+    var waypoint = new Waypoint({
+      element: document.querySelector("#about-info"),
+      handler: function(direction) {
+        initTimelineAnimation();
+      }
+    })
   };
+
+  var closingTime = timelineMilestones.filter(function (milestone) {
+    return milestone.name == "Applications Close"
+  })[0].time;
+  var applicationsClosed = closingTime.isBefore(now, 'd')
+  var volunteerApplicationOpen = now.isAfter(moment("September 28, 2015")) && now.isBefore(moment("October 14, 2015"))
+
+  var callToActionText, callToActionLink;
+
+  $("#volunteer-button").hide();
+  if (applicationsClosed) {
+    // volunteering
+    callToActionText = "Volunteer";
+    callToActionLink = VOLUNTEER_LINK || "javascript:swal('Send us an email mason@ugahacks.com');";
+    hideRegistration();
+  } else {
+    // registration
+    callToActionText = "Register";
+    callToActionLink = isMobile ? "https://ugahacks.typeform.com/to/rXE0ra" : "#register";
+  };
+
+  if (callToActionText != "Volunteer" && volunteerApplicationOpen) {
+    var button = $("#volunteer-button")
+    button.show();
+    button.attr("href", VOLUNTEER_LINK);
+  };
+
+  $("li a[href='#register'], a[href='#register'] *").text(callToActionText);
+  $("a[href='#register']").attr("href", callToActionLink);
 
 });
