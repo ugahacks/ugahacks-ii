@@ -145,19 +145,18 @@ $(document).ready(function() {
   $("#volunteer-button").hide();
   if (applicationsClosed) {
     // volunteering
-    callToActionText = "Volunteer";
-    callToActionLink = VOLUNTEER_LINK || "javascript:swal('Send us an email mason@ugahacks.com');";
-    hideRegistration();
+    callToActionText = "Register (UGA Students Only)";
+    callToActionLink = isMobile ? "https://ugahacks.typeform.com/to/rXE0ra" : "#register";
+    // hideRegistration();
+    var button = $("#volunteer-button")
+    button.show();
+    button.attr("href", VOLUNTEER_LINK);
   } else {
     // registration
     callToActionText = "Register";
     callToActionLink = isMobile ? "https://ugahacks.typeform.com/to/rXE0ra" : "#register";
-  };
-
-  if (callToActionText != "Volunteer" && volunteerApplicationOpen) {
     var button = $("#volunteer-button")
-    button.show();
-    button.attr("href", VOLUNTEER_LINK);
+    button.hide();
   };
 
   $("li a[href='#register'], a[href='#register'] *").text(callToActionText);
