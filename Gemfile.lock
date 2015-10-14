@@ -46,6 +46,7 @@ GEM
       execjs
     coffee-script-source (1.9.1.1)
     commonjs (0.2.7)
+    connection_pool (2.2.0)
     erubis (2.7.0)
     execjs (2.5.2)
     faraday (0.9.1)
@@ -116,6 +117,13 @@ GEM
       thor (>= 0.18.1, < 2.0)
     raindrops (0.15.0)
     rake (10.4.2)
+    react-rails (1.0.0)
+      coffee-script-source (~> 1.8)
+      connection_pool
+      execjs
+      rails (>= 3.1)
+      react-source (~> 0.13)
+    react-source (0.13.3)
     ref (2.0.0)
     sass (3.4.18)
     sass-rails (5.0.4)
@@ -166,6 +174,7 @@ DEPENDENCIES
   pg (~> 0.18)!
   rails (= 4.2.0)!
   rails_12factor!
+  react-rails!
   sass (~> 3.4.18)!
   sass-rails (~> 5.0.4)!
   spring (~> 1.3)!

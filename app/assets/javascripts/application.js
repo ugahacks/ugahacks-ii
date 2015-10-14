@@ -1,5 +1,8 @@
 //= require jquery
 //= require turbolinks
+//= require react
+//= require react_ujs
+//= require components
 //= require scrollReveal.js/dist/scrollReveal.min.js
 //= require bootstrap/dist/js/bootstrap.js
 //= require moment

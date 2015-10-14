@@ -22,5 +22,10 @@ module Ugahacks
 
     # Delegates front-end dependency management to Bower
     config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components')
+
+    config.react.jsx_transform_options = {
+      harmony: true,
+      strip_types: true, # for removing Flow type annotations
+    }
   end
 end
