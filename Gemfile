@@ -13,6 +13,7 @@ ruby '2.2.0'
   gem 'sass-rails', '~> 5.0.4'
   gem 'less-rails', '~> 2.7.0'
   gem 'therubyracer'
+  gem 'react-rails'
 
   group :development, :test do
     gem "spring", "~> 1.3"
