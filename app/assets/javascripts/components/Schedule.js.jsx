@@ -5,7 +5,7 @@ var Schedule = React.createClass({
         {
           "name": "Start Check-In",
           "description": "Lamar Dodd School of Art",
-          "time": "October 23, 2015 5:00 pm"
+          "time": "October 23, 2015 5:00 pm",
         },
         {
           "name": "Opening Ceremony Starts",
@@ -119,13 +119,7 @@ var Schedule = React.createClass({
         };
 
         finalHash[day] = finalHash[day].sort(function(a, b) {
-          if (a.time.isBefore(b)) {
-            return 1;
-          } else if (a.time.isAfter(b)) {
-            return -1;
-          } else {
-            return 0;
-          };
+          return a.time.unix() - b.time.unix()
         })
 
         return finalHash;
@@ -141,7 +135,7 @@ var Schedule = React.createClass({
           data = this.state.data[key];
           return (
             <div className="col-md-4">
-              <h4>{moment(key).format("dddd MM/DD")}</h4>
+              <h4>{moment(key, "MM-DD-YYYY").format("dddd MM/DD")}</h4>
               <ul className="list-group">
                 {
                   data.map(function(a) {
