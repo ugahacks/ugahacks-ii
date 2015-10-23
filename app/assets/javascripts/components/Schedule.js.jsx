@@ -34,7 +34,7 @@ var Schedule = React.createClass({
         {
           "name": "Clarifai TechTalk",
           "description": "Learn about the basics of machine learning, and how you can apply them with Clarifai.",
-          "time": "October 23, 2015 10:00 pm",
+          "time": "October 24, 2015 12:00 am",
           "location": "Room 104"
         },
         {
@@ -101,12 +101,12 @@ var Schedule = React.createClass({
           "time": "October 24, 2015 1:00 am",
           "location": "Snack Table"
         },
-        // {
-        //   "name": "Design Talk",
-        //   "description": null,
-        //   "time": "October 24, 2015 12:00 am",
-        //   "location": "Room 104"
-        // },
+        {
+          "name": "Design Talk",
+          "description": null,
+          "time": "October 23, 2015 10:00 pm",
+          "location": "Room 104"
+        }
         // {
         //   "name": "Intro to Coding",
         //   "description": null,
