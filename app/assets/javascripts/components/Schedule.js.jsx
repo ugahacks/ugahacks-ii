@@ -147,7 +147,7 @@ var Schedule = React.createClass({
                   data.map(function(a) {
                     return (
                       <li className="list-group-item">
-                        <span className={a.time.isBefore(moment()) ? "badge done" : "badge"}>{a.time.format("h:mm A")}</span>
+                        <span className={a.time.isBefore(moment().subtract(4, 'h')) ? "badge done" : "badge"}>{a.time.format("h:mm A")}</span>
                         <span className="event-heading">{a.name}</span>
                         { a.location && <span className="location">{a.location}</span> }
                         { a.description && <div className="description">{a.description}</div> }
