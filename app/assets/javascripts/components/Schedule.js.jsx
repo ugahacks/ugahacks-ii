@@ -4,93 +4,85 @@ var Schedule = React.createClass({
       "data": [
         {
           "name": "Start Check-In",
-          "description": "Lamar Dodd School of Art",
+          "description": null,
           "time": "October 23, 2015 5:00 pm",
+          "location": "Lamar Dodd School of Art"
         },
         {
           "name": "Opening Ceremony Starts",
           "description": null,
-          "time": "October 23, 2015 6:30 pm"
+          "time": "October 23, 2015 6:30 pm",
+          "location": "S151 Auditorium"
         },
         {
-          "name": "End Check-in/End Ceremony/Start Hacking",
+          "name": "Teambuilding Mixer",
+          "description": "If you haven't find a team or are looking to build your team, then come to the mixer to find awesome hackers.",
+          "time": "October 23, 2015 8:00 pm",
+          "location": "S151 Auditorium"
+        },
+        {
+          "name": "Hacking Begins",
           "description": null,
           "time": "October 23, 2015 8:00 pm"
         },
         {
           "name": "Dinner",
           "description": null,
-          "time": "October 23, 2015 9:00 pm"
+          "time": "October 23, 2015 9:00 pm",
+          "location": "Courtyard"
         },
         {
           "name": "Clarifai TechTalk",
           "description": "Learn about the basics of machine learning, and how you can apply them with Clarifai.",
-          "time": "October 23, 2015 10:00 pm"
-        },
-        {
-          "name": "Intro to Web Dev",
-          "description": null,
-          "time": "October 24, 2015 12:00 am"
-        },
-        {
-          "name": "Super Smash Bros Tournament",
-          "description": null,
-          "time": "October 24, 2015 2:00 am"
-        },
-        {
-          "name": "Snack",
-          "description": null,
-          "time": "October 24, 2015 3:00 am"
+          "time": "October 23, 2015 10:00 pm",
+          "location": "Room 104"
         },
         {
           "name": "Breakfast",
           "description": null,
-          "time": "October 24, 2015 9:00 am"
-        },
-        {
-          "name": "Tech Talk on Design Thinking",
-          "description": null,
-          "time": "October 24, 2015 12:00 pm"
+          "time": "October 24, 2015 9:00 am",
+          "location": "Courtyard"
         },
         {
           "name": "Lunch",
           "description": null,
-          "time": "October 24, 2015 3:00 pm"
+          "time": "October 24, 2015 3:00 pm",
+          "location": "Courtyard"
         },
         {
-          "name": "Talk",
-          "description": null,
-          "time": "October 24, 2015 5:00 pm"
-        },
-        {
-          "name": "Design Talk",
-          "description": null,
-          "time": "October 24, 2015 6:00 pm"
+          "name": "Design Thinking Talk",
+          "description": "Come learn about the stages of design thinking, a methodology used by designers to solve complex problems, and how you can use it to improve your hack.",
+          "time": "October 24, 2015 12:00 pm",
+          "location": "Room 104"
         },
         {
           "name": "Dinner",
           "description": null,
-          "time": "October 24, 2015 9:00 pm"
+          "time": "October 24, 2015 9:00 pm",
+          "location": "Courtyard"
         },
         {
           "name": "Super Smash Bros Tournament",
-          "description": null,
-          "time": "October 25, 2015 2:00 am"
+          "description": "Sign up starts at 11pm at the Second Floor Lobby.",
+          "time": "October 25, 2015 2:00 am",
+          "location": "Second Floor Lobby"
         },
         {
-          "name": "Snack",
-          "description": null,
-          "time": "October 25, 2015 3:00 am"
+          "name": "Hacking Ends",
+          "description": "Submit your hacks to DevPost. Provide a brief description and list your team members.",
+          "time": "October 25, 2015 8:00 am"
         },
         {
-          "name": "Breakfast + End of Hacking",
+          "name": "Breakfast",
           "description": null,
-          "time": "October 25, 2015 9:00 am"
+          "time": "October 25, 2015 8:30 am",
+          "location": "Courtyard"
         },
         {
           "name": "Closing Expo Starts",
           "description": null,
-          "time": "October 25, 2015 10:00 am"
+          "time": "October 25, 2015 10:00 am",
+          "location": "First Floor Lobby"
         },
         {
           "name": "End of Closing Expo",
@@ -100,13 +92,27 @@ var Schedule = React.createClass({
         {
           "name": "Closing Ceremony",
           "description": null,
-          "time": "October 25, 2015 12:00 pm"
+          "time": "October 25, 2015 12:00 pm",
+          "location": "S151 Auditorium"
         },
         {
-          "name": "Buses Depart",
+          "name": "Insomnia Cookies",
           "description": null,
-          "time": "October 25, 2015 1:30 pm"
-        }
+          "time": "October 24, 2015 1:00 am",
+          "location": "Snack Table"
+        },
+        // {
+        //   "name": "Design Talk",
+        //   "description": null,
+        //   "time": "October 24, 2015 12:00 am",
+        //   "location": "Room 104"
+        // },
+        // {
+        //   "name": "Intro to Coding",
+        //   "description": null,
+        //   "time": "October 24, 2015 4:00 pm",
+        //   "location": "Room 104"
+        // }
       ].map(function(a) {
         a.time = moment.utc(a.time);
         return a;
@@ -141,11 +147,10 @@ var Schedule = React.createClass({
                   data.map(function(a) {
                     return (
                       <li className="list-group-item">
-                        <span className="badge">{a.time.format("h:mm A")}</span>
+                        <span className={a.time.isBefore(moment()) ? "badge done" : "badge"}>{a.time.format("h:mm A")}</span>
                         <span className="event-heading">{a.name}</span>
-                        {
-                          a.description != null ? <div className="description">{a.description}</div> : null
-                        }
+                        { a.location && <span className="location">{a.location}</span> }
+                        { a.description && <div className="description">{a.description}</div> }
                       </li>
                     );
                   })

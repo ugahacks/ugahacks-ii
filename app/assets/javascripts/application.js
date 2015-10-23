@@ -12,7 +12,7 @@
 
 $(document).ready(function() {
 
-  var VOLUNTEER_LINK = "https://ugahacks.typeform.com/to/NEDjqb";
+  var VOLUNTEER_LINK = "";
 
   // indicate active section in navbar
   $(window).scroll(function () {
@@ -142,27 +142,5 @@ $(document).ready(function() {
   })[0].time;
   var applicationsClosed = closingTime.isBefore(now, 'd')
   var volunteerApplicationOpen = now.isAfter(moment("September 28, 2015")) && now.isBefore(moment("October 14, 2015"))
-
-  var callToActionText, callToActionLink;
-
-  $("#volunteer-button").hide();
-  if (applicationsClosed) {
-    // volunteering
-    callToActionText = "Register (UGA Students Only)";
-    callToActionLink = isMobile ? "https://ugahacks.typeform.com/to/rXE0ra" : "#register";
-    // hideRegistration();
-    var button = $("#volunteer-button")
-    button.show();
-    button.attr("href", VOLUNTEER_LINK);
-  } else {
-    // registration
-    callToActionText = "Register";
-    callToActionLink = isMobile ? "https://ugahacks.typeform.com/to/rXE0ra" : "#register";
-    var button = $("#volunteer-button")
-    button.hide();
-  };
-
-  $("li a[href='#register'], a[href='#register'] *").text(callToActionText);
-  $("a[href='#register']").attr("href", callToActionLink);
 
 });
