@@ -9,14 +9,14 @@ var Schedule = React.createClass({
           "location": "Lamar Dodd School of Art"
         },
         {
-          "name": "Opening Ceremony Starts",
+          "name": "Opening Ceremony",
           "description": null,
           "time": "October 23, 2015 6:30 pm",
           "location": "S151 Auditorium"
         },
         {
           "name": "Teambuilding Mixer",
-          "description": "If you haven't find a team or are looking to build your team, then come to the mixer to find awesome hackers.",
+          "description": "If you haven't found a team or are looking to build your team, then come to the mixer to find awesome hackers.",
           "time": "October 23, 2015 8:00 pm",
           "location": "S151 Auditorium"
         },
@@ -32,10 +32,10 @@ var Schedule = React.createClass({
           "location": "Courtyard"
         },
         {
-          "name": "Clarifai TechTalk",
+          "name": "Clarifai Tech Talk",
           "description": "Learn about the basics of machine learning, and how you can apply them with Clarifai.",
           "time": "October 24, 2015 12:00 am",
-          "location": "Room 104"
+          "location": "S151 Auditorium"
         },
         {
           "name": "Breakfast",
@@ -53,7 +53,7 @@ var Schedule = React.createClass({
           "name": "Design Thinking Talk",
           "description": "Come learn about the stages of design thinking, a methodology used by designers to solve complex problems, and how you can use it to improve your hack.",
           "time": "October 24, 2015 12:00 pm",
-          "location": "Room 104"
+          "location": "S151 Auditorium"
         },
         {
           "name": "Dinner",
@@ -79,7 +79,7 @@ var Schedule = React.createClass({
           "location": "Courtyard"
         },
         {
-          "name": "Closing Expo Starts",
+          "name": "Closing Expo",
           "description": null,
           "time": "October 25, 2015 10:00 am",
           "location": "First Floor Lobby"
@@ -102,16 +102,16 @@ var Schedule = React.createClass({
           "location": "Snack Table"
         },
         {
-          "name": "Design Talk",
+          "name": "UI/UX Design Talk",
           "description": null,
           "time": "October 23, 2015 10:00 pm",
-          "location": "Room 104"
+          "location": "S151 Auditorium"
         },
         {
           "name": "Intro to Coding",
           "description": null,
           "time": "October 24, 2015 4:00 pm",
-          "location": "Room 104"
+          "location": "S151 Auditorium"
         }
       ].map(function(a) {
         a.time = moment.utc(a.time);
