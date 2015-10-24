@@ -53,7 +53,7 @@ var Schedule = React.createClass({
           "name": "Design Thinking Talk",
           "description": "Come learn about the stages of design thinking, a methodology used by designers to solve complex problems, and how you can use it to improve your hack.",
           "time": "October 24, 2015 12:00 pm",
-          "location": "S151 Auditorium"
+          "location": " Room 104"
         },
         {
           "name": "Dinner",
@@ -110,8 +110,8 @@ var Schedule = React.createClass({
         {
           "name": "Intro to Coding",
           "description": null,
-          "time": "October 24, 2015 4:00 pm",
-          "location": "S151 Auditorium"
+          "time": "October 24, 2015 6:00 pm",
+          "location": "Room 104"
         }
       ].map(function(a) {
         a.time = moment.utc(a.time);
