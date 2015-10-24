@@ -63,13 +63,13 @@ var Schedule = React.createClass({
         },
         {
           "name": "Super Smash Bros Tournament",
-          "description": "Sign up starts at 11pm at the Second Floor Lobby.",
+          "description": "Sign up starts at 11pm at the First Floor Lobby.",
           "time": "October 25, 2015 2:00 am",
-          "location": "Second Floor Lobby"
+          "location": "First Floor Lobby"
         },
         {
           "name": "Hacking Ends",
-          "description": "Submit your hacks to DevPost. Provide a brief description and list your team members.",
+          "description": "Submit your hacks to <a href=\"http://ugahacks.devpost.com/\">DevPost</a>. Provide a brief description and list your team members.",
           "time": "October 25, 2015 8:00 am"
         },
         {
@@ -111,7 +111,13 @@ var Schedule = React.createClass({
           "name": "Intro to Coding",
           "description": null,
           "time": "October 24, 2015 6:00 pm",
-          "location": "Room 104"
+          "location": "S151 Auditorium"
+        },
+        {
+          "name": "Late Night Movie",
+          "description": "<a href=\"https://www.facebook.com/events/499413236898646/permalink/500949910078312/\">Vote on Facebook</a> for what you want to see!",
+          "time": "October 25, 2015 4:00 am",
+          "location": "S151 Auditorium"
         }
       ].map(function(a) {
         a.time = moment.utc(a.time);
@@ -150,7 +156,7 @@ var Schedule = React.createClass({
                         <span className={a.time.isBefore(moment().subtract(4, 'h')) ? "badge done" : "badge"}>{a.time.format("h:mm A")}</span>
                         <span className="event-heading">{a.name}</span>
                         { a.location && <span className="location">{a.location}</span> }
-                        { a.description && <div className="description">{a.description}</div> }
+                        { a.description && <div className="description" dangerouslySetInnerHTML={{__html: a.description}}></div> }
                       </li>
                     );
                   })
