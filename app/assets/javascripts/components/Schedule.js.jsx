@@ -63,7 +63,7 @@ var Schedule = React.createClass({
         },
         {
           "name": "Super Smash Bros Tournament",
-          "description": "Sign up starts at 11pm at the First Floor Lobby.",
+          "description": "Sign up <a href=\"https://ugahacks.typeform.com/to/ZBgkfB\">here</a>.",
           "time": "October 25, 2015 2:00 am",
           "location": "First Floor Lobby"
         },
