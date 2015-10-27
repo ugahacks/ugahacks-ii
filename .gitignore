@@ -106,3 +106,5 @@ Z-notes.rb
 /log/development.log
 /node_modules/*
 log/production.log
+
+/tmp/*
