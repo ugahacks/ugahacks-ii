@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   get '/resumes', to: redirect('https://www.dropbox.com/sh/ekgc92vzi9z4hrb/AABDc0y2RDzHspAwryETXy03a')
 
   root 'single_views#home'
- 
-  post 'single_views/subscribe' => 'single_views#subscribe'
+
+  post 'preregister' => 'single_views#preregister'
 
   post 'emailapi/subscribe' => 'emailapi#subscribe'
 

@@ -14,6 +14,8 @@ ruby '2.2.0'
   gem 'less-rails', '~> 2.7.0'
   gem 'therubyracer'
   gem 'react-rails'
+  gem 'google-api-client', '~> 0.7.1', require: 'google/api_client'
+  gem 'google_drive'
 
   group :development, :test do
     gem "spring", "~> 1.3"

@@ -7,16 +7,43 @@
 			id: "logo"
 			) %>
 		</div>
-		<div class="jumbotron spotlight">
-		<a href="http://ugahacks.devpost.com/" class="btn btn-lg btn-danger bottom-buffer">Submit your hack</a><br>
-		<a href="https://ugahacks.typeform.com/to/ZBgkfB" class="btn btn-lg btn-danger bottom-buffer">Smash Bros Tournament</a><br>
-			<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/UgaHacks" data-widget-id="657439024475480064"  data-chrome="noborders noheader">Tweets by @UgaHacks</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<div class="jumbotron spotlight full-height">
+			<div class="row">
+				<h4>Get notified when applications open.</h4><br>
+				<div class="col-md-4 col-md-offset-4">
+					<form id="preregistration">
+						<div class="input-group">
+							<input type="email" class="form-control" placeholder="E-Mail Address">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button">Pre-Register</button>
+							</span>
+						</div>
+					</form>
+					<script type="text/javascript">
+						$("#preregistration").submit(function(){
+							var email = ($("#preregistration input[type=\"email\"]").val());
+							$.post("/preregister", {
+								data: { email: email },
+								authenticity_token: "<%= form_authenticity_token %>"
+							}, function(data) {
+								var response;
+								if (data.status && data.status == "Error") {
+									response = "Sorry, please refresh the page and try again.";
+								} else {
+									response = "Thanks for signing up! We'll keep you posted.";
+								}
+								$("#preregistration").text(response);
+							})
+						  return false;
+						});
+					</script>
+				</div>
+			</div>
 		</div>
 		<section id="schedule" class="row" >
 			<div class="col-md-12">
 				<h2 class="header">Our <span class="red-text">Schedule</span></h2>
-					<%= react_component('Schedule') %>
+				<%= react_component('Schedule') %>
 			</div>
 		</section>
 		<section id="parking" class="row collapsible" >
@@ -125,22 +152,22 @@
 				<p >Make an impact and Happy Hacking!</p>
 			</div>
 			<div class="col-md-10 col-md-offset-1" id="timeline">
-				 	<div class="col-md-3 timeline-item">
-					 	<div class="progress-fill"></div>
-					 	<p></p>
-				 	</div>
-				 	<div class="col-md-3 timeline-item">
-					 	<div class="progress-fill"></div>
-					 	<p></p>
-				 	</div>
-				 	<div class="col-md-3 timeline-item">
-					 	<div class="progress-fill"></div>
-					 	<p></p>
-				 	</div>
-				 	<div class="col-md-3 timeline-item">
-					 	<div class="progress-fill"></div>
-					 	<p></p>
-				 	</div>
+				<div class="col-md-3 timeline-item">
+					<div class="progress-fill"></div>
+					<p></p>
+				</div>
+				<div class="col-md-3 timeline-item">
+					<div class="progress-fill"></div>
+					<p></p>
+				</div>
+				<div class="col-md-3 timeline-item">
+					<div class="progress-fill"></div>
+					<p></p>
+				</div>
+				<div class="col-md-3 timeline-item">
+					<div class="progress-fill"></div>
+					<p></p>
+				</div>
 			</div>
 		</section>
 		<section id="sponsors" class="row" >
