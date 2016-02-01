@@ -8,6 +8,7 @@ class SingleViewsController < ApplicationController
   attr_reader :GOOGLE_SESSION
   attr_reader :WORKSHEET
   # session = GoogleDrive.login_with_oauth(access_token)
+  layout 'blank', only: [:apply]
 
   def home
     @typeform_url = "https://ugahacks.typeform.com/to/rXE0ra"
