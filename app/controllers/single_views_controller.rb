@@ -13,6 +13,9 @@ class SingleViewsController < ApplicationController
     @typeform_url = "https://ugahacks.typeform.com/to/rXE0ra"
   end
 
+  def apply
+  end
+
   def preregister
     if preregisterant = Preregistrant.create(clean_params)
       # @CLIENT_ID = ENV['GOOGLE_CLIENT_ID']
