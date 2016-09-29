@@ -3,121 +3,80 @@ var Schedule = React.createClass({
     return {
       "data": [
         {
-          "name": "Start Check-In",
+          "name": "Check-In",
           "description": null,
-          "time": "October 23, 2015 5:00 pm",
-          "location": "Lamar Dodd School of Art"
+          "time": "November 4, 2016 6:00 pm",
+          "location": "Thinc Studios"
         },
         {
           "name": "Opening Ceremony",
           "description": null,
-          "time": "October 23, 2015 6:30 pm",
-          "location": "S151 Auditorium"
+          "time": "November 4, 2016 8:00 pm"
         },
+	{
+	  "name": "Dinner/Hacking Starts",
+	  "description": null,
+	  "time": "November 4, 2016 9:00 pm"
+	},
         {
-          "name": "Teambuilding Mixer",
+          "name": "Team Building Exercise",
           "description": "If you haven't found a team or are looking to build your team, then come to the mixer to find awesome hackers.",
-          "time": "October 23, 2015 8:00 pm",
-          "location": "S151 Auditorium"
+          "time": "November 4, 2016 9:15 pm"
         },
         {
-          "name": "Hacking Begins",
+          "name": "Snacks",
           "description": null,
-          "time": "October 23, 2015 8:00 pm"
-        },
-        {
-          "name": "Dinner",
-          "description": null,
-          "time": "October 23, 2015 9:00 pm",
-          "location": "Courtyard"
-        },
-        {
-          "name": "Clarifai Tech Talk",
-          "description": "Learn about the basics of machine learning, and how you can apply them with Clarifai.",
-          "time": "October 24, 2015 12:00 am",
-          "location": "S151 Auditorium"
+          "time": "November 5, 2016 12:00 am"
         },
         {
           "name": "Breakfast",
           "description": null,
-          "time": "October 24, 2015 9:00 am",
-          "location": "Courtyard"
+          "time": "November 5, 2016 8:00 am"
+        },
+        {
+          "name": "Seminar/Workshop",
+          "description": null,
+          "time": "November 5, 2016 11:00 am"
         },
         {
           "name": "Lunch",
           "description": null,
-          "time": "October 24, 2015 3:00 pm",
-          "location": "Courtyard"
+          "time": "November 5, 2016 12:00 pm"
         },
         {
-          "name": "Design Thinking Talk",
-          "description": "Come learn about the stages of design thinking, a methodology used by designers to solve complex problems, and how you can use it to improve your hack.",
-          "time": "October 24, 2015 12:00 pm",
-          "location": " Room 104"
+          "name": "Seminar/Workshop",
+          "description": null,
+          "time": "November 5, 2016 2:00 pm"
         },
         {
           "name": "Dinner",
           "description": null,
-          "time": "October 24, 2015 9:00 pm",
-          "location": "Courtyard"
-        },
-        {
-          "name": "Super Smash Bros Tournament",
-          "description": "Sign up <a href=\"https://ugahacks.typeform.com/to/ZBgkfB\">here</a>.",
-          "time": "October 25, 2015 2:00 am",
-          "location": "First Floor Lobby"
-        },
-        {
-          "name": "Hacking Ends",
-          "description": "Submit your hacks to <a href=\"http://ugahacks.devpost.com/\">DevPost</a>. Provide a brief description and list your team members.",
-          "time": "October 25, 2015 8:00 am"
+          "time": "November 5, 2016 8:00 pm"
         },
         {
           "name": "Breakfast",
           "description": null,
-          "time": "October 25, 2015 8:30 am",
-          "location": "Courtyard"
+          "time": "November 6, 2016 8:00 am"
         },
         {
-          "name": "Closing Expo",
+          "name": "Deadline to Submit",
           "description": null,
-          "time": "October 25, 2015 10:00 am",
-          "location": "First Floor Lobby"
+          "time": "November 6, 2016 10:00 am"
         },
         {
-          "name": "End of Closing Expo",
+          "name": "Showcase/Expo",
           "description": null,
-          "time": "October 25, 2015 11:30 am"
+          "time": "November 6, 2016 11:00 am"
         },
         {
           "name": "Closing Ceremony",
           "description": null,
-          "time": "October 25, 2015 12:00 pm",
-          "location": "S151 Auditorium"
+          "time": "November 6, 2016 11:00 am"
         },
         {
-          "name": "Insomnia Cookies",
+          "name": "Buses depart",
           "description": null,
-          "time": "October 24, 2015 1:00 am",
-          "location": "Snack Table"
-        },
-        {
-          "name": "UI/UX Design Talk",
-          "description": null,
-          "time": "October 23, 2015 10:00 pm",
-          "location": "S151 Auditorium"
-        },
-        {
-          "name": "Intro to Coding",
-          "description": null,
-          "time": "October 24, 2015 6:00 pm",
-          "location": "S151 Auditorium"
-        },
-        {
-          "name": "Late Night Movie",
-          "description": "<a href=\"https://www.facebook.com/events/499413236898646/permalink/500949910078312/\">Vote on Facebook</a> for what you want to see!",
-          "time": "October 25, 2015 4:00 am",
-          "location": "S151 Auditorium"
+          "time": "November 6, 2015 1:00 pm"
         }
       ].map(function(a) {
         a.time = moment.utc(a.time);
