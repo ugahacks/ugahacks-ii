@@ -45,19 +45,19 @@ $(document).ready(function() {
 
   var timelineMilestones = [
     {
-      time: "September 3, 2015",
+      time: "September 29, 2016",
       name:  "Applications Open"
     },
     {
-      time: "October 6, 2015",
+      time: "October 13, 2016",
       name:  "Applications Close"
     },
     {
-      time: "October 8, 2015",
+      time: "October 20, 2016",
       name:  "Decisions Released"
     },
     {
-      time: "October 23, 2015",
+      time: "November 4, 2016",
       name:  "UGA Hacks Begins"
     }
   ].map(function (milestone) {
