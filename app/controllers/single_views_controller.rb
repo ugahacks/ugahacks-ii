@@ -11,7 +11,7 @@ class SingleViewsController < ApplicationController
   layout 'blank', only: [:apply]
 
   def home
-    @typeform_url = "https://ugahacks.typeform.com/to/rXE0ra"
+    @typeform_url = "https://amphy.typeform.com/to/OofIVn"
   end
 
   def apply
