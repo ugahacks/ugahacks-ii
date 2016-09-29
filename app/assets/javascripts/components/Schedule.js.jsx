@@ -76,7 +76,7 @@ var Schedule = React.createClass({
         {
           "name": "Buses depart",
           "description": null,
-          "time": "November 6, 2015 1:00 pm"
+          "time": "November 6, 2016 1:00 pm"
         }
       ].map(function(a) {
         a.time = moment.utc(a.time);
