@@ -1,0 +1,241 @@
+// Place all the styles related to the single_views controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'colors'
+@import 'fonts'
+@import 'mixins/*'
+@import 'bourbon/app/assets/stylesheets/bourbon'
+
+.top-buffer
+	margin-top: 20px
+
+.bottom-buffer
+	margin-bottom: 20px
+
+.full-height
+	min-height: 100vh
+
+h4
+	font-size: 2em
+
+input[type="email"]
+	color: black
+
+.sponsor-row
+	margin-bottom: 15px
+
+.collapsible
+	min-height: auto
+
+*:not(.red-text)
+	color: #000000
+
+.red-text, .red-text:hover
+	color: $main-color
+
+.panel, .panel-heading
+	border-radius: 0
+
+.panel-body
+	padding-bottom: 20px
+
+// make navbar centered
+@media (min-width: 768px)
+	.navbar-nav
+		float: none !important
+		margin: 0 auto !important
+		display: table !important
+		table-layout: fixed !important
+
+// correct navbar link colors
+.nav li a
+	color: black
+	margin: 2px 0 2px 0
+	&:focus, &:hover, &.active
+		background: $main-color !important
+		color: $white
+
+// hide navbar on mobile
+.navbar
+	@include breakpoint($xs)
+		display: none
+	background: #F6F7F7
+	font-family: "Gotham Medium"
+	box-shadow: 0px 0px 5px 0px #888
+
+body
+	overflow-x: hidden
+	background-color: #ebebeb
+	//color: #000000
+	//background-image: asset-url("bg.png")
+	transition: background 1s ease
+	margin-left: 5%
+	margin-right: 5%
+	.main-content
+		padding-top: 50px
+		margin-top: 50px
+		text-align: center
+		.spotlight
+			// height: 100vh
+		font-family: "Gotham Book"
+		h1, h2, h3
+			font-family: "Gotham Medium"
+		h2
+			margin-top: 3px
+
+#logo
+	padding: 20px
+	margin-top: -60px
+	@include breakpoint($sm)
+		margin: auto
+		margin-top: 50px
+.spotlight
+	h1, h2
+		font-family: "Gotham Bold"
+section
+	padding: 25px 0 100px 0
+	min-height: 100vh
+	.header
+		text-size: 1.5em
+		font-family: Helvetica
+		margin-bottom: 20px
+.jumbotron.spotlight
+	background: transparent
+	h1, h2, h3
+		font-size: 3.5em
+.horizontal
+	display: inline-block
+.red-btn
+	margin-top: 25px
+	background-color: $main-color
+	border-radius: 0
+	&:hover
+		color: $white
+		cursor: auto
+#about
+	padding: 10px
+	p
+		font-size: 16px
+		padding: 0 20px 0 20px
+	#timeline
+		margin-top: 100px
+		.timeline-item
+			position: relative
+			margin: 20px
+			min-height: 100px
+			padding: 60px
+			border: 5px solid black
+			@include breakpoint($md)
+				@include aspect-ratio(3, 1)
+				width: calc(25% - 40px)
+			.progress-fill
+				background: $main-color
+				position: absolute
+				top: 0
+				bottom: 0
+				z-index: -999
+				left: 0%
+				right: 100%
+				&.active
+					@include transition(all 1.0s linear)
+					right: 0
+			p
+				@include centered
+				width: 100%
+				text-align: center
+				padding: 20px
+#schedule
+	.list-group-item
+		text-align: left
+		.event-heading
+			color: black
+		.location
+			color: gray
+			&:before
+				content: " @ "
+		.description
+			background: #eee
+			&>a
+				color: $main-color
+				text-decoration: underline
+			color: gray
+			padding: 10px
+			margin-top: 10px
+			border-radius: 4px
+		.badge
+			padding: 5px
+			border-radius: 0
+			&.done
+				background-color: $main-color
+				&:after
+					content: " ✓"
+#parking
+	margin-bottom: 80px
+.panel
+	margin: auto
+	height: 250px
+	border: 0 !important
+	.panel-heading
+		margin-top: 20px
+		background-color: $main-color
+		.panel-title
+			font-family: "Gotham Bold"
+			padding: 15px
+			color: #fff
+	.panel-body
+		color: #000000
+		text-align: left
+#contact
+	margin-bottom: 100px
+#reg-container
+	height: 85%
+	background-color: #ebebeb
+	width: 100%
+	align-content: center
+#sponsors
+	img
+		margin-right: 20px
+		&.kilo
+			width: 200px
+			display: inline-block
+		&.mega
+			width: 300px
+			display: inline-block
+		&.giga
+			width: 500px
+			display: inline-block
+#partners
+	img
+		border-radius: 8px
+#sponsors, #partners
+	img
+		margin: 20px
+		@include breakpoint($xs)
+		&.flow
+			display: inline-block
+			width: 300px
+#register-fade
+	background-image: linear-gradient(to bottom, transparent, white)
+	height: 500px
+#register
+	text-align: center
+	background: #ebebeb
+	color: black
+	text-transform: uppercase
+	padding: 0
+	margin-top: 50px
+	margin-right: auto
+	margin-left: auto
+	width: 100%
+	iframe
+		border: 0
+		display: block
+		width: 100%
+		height: 100vh
+
+
+.light-background
+	border-radius: 4px
+	background: $white
+	padding: 20px

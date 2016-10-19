@@ -1,0 +1,14 @@
+{
+  "name": "dsl-generated dependencies",
+  "dependencies": {
+    "scrollreveal": "3.0.9",
+    "bootstrap": "3.3.5",
+    "bourbon": "4.2.4",
+    "moment": "2.10.6",
+    "sweetalert": "1.1.0",
+    "waypoints": "4.0.0"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
+  }
+}
