@@ -49,11 +49,11 @@ $(document).ready(function() {
       name:  "Applications Open"
     },
     {
-      time: "October 13, 2016",
+      time: "October 25, 2016",
       name:  "Applications Close"
     },
     {
-      time: "October 20, 2016",
+      time: "October 26, 2016",
       name:  "Decisions Released"
     },
     {
