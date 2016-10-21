@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get '/resumes', to: redirect('https://www.dropbox.com/sh/ekgc92vzi9z4hrb/AABDc0y2RDzHspAwryETXy03a')
+  get '/volunteer', to: redirect('https://docs.google.com/forms/d/e/1FAIpQLSd2dFzGRVwBfPpiBEbrwJ-05qdsbaoPNGNXHXzi_qHhrcD8pQ/viewform')
   get '/apply' => 'single_views#apply'
 
   root 'single_views#home'
